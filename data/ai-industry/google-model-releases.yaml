@@ -1,0 +1,161 @@
+calendar_id: google-model-releases
+title: Google Model Releases
+description: Public release announcements for Google AI models.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - ai
+  - google
+  - model-release
+update_frequency: on-demand
+events:
+  - id: google-lamda-2021-05
+    title: Google LaMDA announced
+    date: 2021-05-18
+    all_day: true
+    source: https://blog.google/technology/ai/lamda/
+    notes: Language Model for Dialogue Applications, designed for conversational AI.
+    tags:
+      - google
+      - model-release
+      - lamda
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: google-palm-2022-04
+    title: Google PaLM announced
+    date: 2022-04-04
+    all_day: true
+    source: https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html
+    notes: 540B parameter dense decoder-only transformer model for reasoning and code generation.
+    tags:
+      - google
+      - model-release
+      - palm
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: google-palm-2-2023-05
+    title: Google PaLM 2 announced
+    date: 2023-05-10
+    all_day: true
+    source: https://ai.google/discover/palm2/
+    notes: Improved multilingual, reasoning, and coding capabilities. Available in various sizes.
+    tags:
+      - google
+      - model-release
+      - palm
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: google-bard-2023-02
+    title: Google Bard released
+    date: 2023-02-06
+    all_day: true
+    source: https://blog.google/technology/ai/bard-google-ai-search-updates/
+    notes: Conversational AI service powered by LaMDA, later upgraded to PaLM 2.
+    tags:
+      - google
+      - model-release
+      - bard
+      - chatbot
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: google-gemini-2023-12
+    title: Google Gemini announced
+    date: 2023-12-06
+    all_day: true
+    source: https://deepmind.google/technologies/gemini/
+    notes: Multimodal model family (Ultra, Pro, Nano) succeeding PaLM 2, with native multimodal capabilities.
+    tags:
+      - google
+      - model-release
+      - gemini
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: google-gemini-1-5-2024-02
+    title: Google Gemini 1.5 announced
+    date: 2024-02-15
+    all_day: true
+    source: https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/
+    notes: Features 1 million token context window and improved performance across modalities.
+    tags:
+      - google
+      - model-release
+      - gemini
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: google-gemma-2024-02
+    title: Google Gemma released
+    date: 2024-02-21
+    all_day: true
+    source: https://deepmind.google/models/gemma/
+    notes: Open-source lightweight models (2B and 7B parameters) based on Gemini technology.
+    tags:
+      - google
+      - model-release
+      - gemma
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: google-gemma-2-2024-06
+    title: Google Gemma 2 released
+    date: 2024-06-27
+    all_day: true
+    source: https://deepmind.google/models/gemma/
+    notes: Improved open-source models with 9B and 27B parameter variants.
+    tags:
+      - google
+      - model-release
+      - gemma
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: google-gemini-1-5-pro-2024-05
+    title: Google Gemini 1.5 Pro released
+    date: 2024-05-24
+    all_day: true
+    source: https://blog.google/technology/ai/google-gemini-1-5-pro-available/
+    notes: Advanced model with 2 million token context window and enhanced reasoning.
+    tags:
+      - google
+      - model-release
+      - gemini
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: google-gemini-1-5-flash-2024-05
+    title: Google Gemini 1.5 Flash released
+    date: 2024-05-24
+    all_day: true
+    source: https://blog.google/technology/ai/google-gemini-1-5-flash/
+    notes: Lightweight, fast model optimized for high-volume tasks.
+    tags:
+      - google
+      - model-release
+      - gemini
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: google-gemma-3-2025-03
+    title: Google Gemma 3 released
+    date: 2025-03-12
+    all_day: true
+    source: https://deepmind.google/models/gemma/
+    notes: Advanced open-source model with multimodal capabilities and extended context.
+    tags:
+      - google
+      - model-release
+      - gemma
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: google-gemini-2-0-2024-12
+    title: Google Gemini 2.0 announced
+    date: 2024-12-11
+    all_day: true
+    source: https://deepmind.google/technologies/gemini/
+    notes: Next-generation model family with improved reasoning and agentic capabilities.
+    tags:
+      - google
+      - model-release
+      - gemini
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
