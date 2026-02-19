@@ -1,0 +1,437 @@
+calendar_id: tech-conferences
+title: Tech Conference Dates
+description: Major tech conference dates including WWDC, Google I/O, Microsoft Build, AWS re:Invent, and more.
+locale: en-US
+timezone: America/Los_Angeles
+maintainers:
+  - data-team
+tags:
+  - tech
+  - conferences
+  - developer-events
+update_frequency: yearly
+events:
+  # Apple WWDC
+  - id: wwdc-2020
+    title: WWDC 2020
+    date: 2020-06-22
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Worldwide_Developers_Conference
+    notes: Apple Worldwide Developers Conference 2020. First online-only conference due to COVID-19 pandemic. Announced iOS 14, iPadOS 14, watchOS 7, tvOS 14, macOS Big Sur, and Apple Silicon transition.
+    tags:
+      - apple
+      - wwdc
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: wwdc-2021
+    title: WWDC 2021
+    date: 2021-06-07
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Worldwide_Developers_Conference
+    notes: Apple Worldwide Developers Conference 2021. Online-only conference. Announced iOS 15, iPadOS 15, watchOS 8, tvOS 15, and macOS Monterey.
+    tags:
+      - apple
+      - wwdc
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: wwdc-2022
+    title: WWDC 2022
+    date: 2022-06-06
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Worldwide_Developers_Conference
+    notes: Apple Worldwide Developers Conference 2022. Hybrid format with special day at Apple Park. Announced iOS 16, iPadOS 16, watchOS 9, tvOS 16, macOS Ventura, M2 chip, and updated MacBook Air.
+    tags:
+      - apple
+      - wwdc
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: wwdc-2023
+    title: WWDC 2023
+    date: 2023-06-05
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Worldwide_Developers_Conference
+    notes: Apple Worldwide Developers Conference 2023. Hybrid format with in-person event at Apple Park. Announced iOS 17, iPadOS 17, watchOS 10, tvOS 17, macOS Sonoma, Apple Vision Pro, M2 Ultra, 15-inch MacBook Air, and Mac Studio.
+    tags:
+      - apple
+      - wwdc
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: wwdc-2024
+    title: WWDC 2024
+    date: 2024-06-10
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Worldwide_Developers_Conference
+    notes: Apple Worldwide Developers Conference 2024. Hybrid format with in-person event at Apple Park. Announced iOS 18, iPadOS 18, watchOS 11, macOS Sequoia, visionOS 2, and Apple Intelligence.
+    tags:
+      - apple
+      - wwdc
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: wwdc-2025
+    title: WWDC 2025
+    date: 2025-06-09
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Worldwide_Developers_Conference
+    notes: Apple Worldwide Developers Conference 2025. Hybrid format with in-person event at Apple Park. Announced iOS 26, iPadOS 26, watchOS 26, macOS 26 Tahoe, tvOS 26, visionOS 26, and Liquid Glass design language.
+    tags:
+      - apple
+      - wwdc
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+
+  # Google I/O
+  - id: google-io-2021
+    title: Google I/O 2021
+    date: 2021-05-18
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Google_I/O
+    notes: Google I/O 2021. Virtual event. Announced Android 12 with Material You, Wear OS updates, and Project Starline.
+    tags:
+      - google
+      - google-io
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: google-io-2022
+    title: Google I/O 2022
+    date: 2022-05-11
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Google_I/O
+    notes: Google I/O 2022. Virtual event. Focus on AI/ML capabilities, privacy controls, Google Workspace updates, Android and Wear OS updates.
+    tags:
+      - google
+      - google-io
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: google-io-2023
+    title: Google I/O 2023
+    date: 2023-05-10
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Google_I/O
+    notes: Google I/O 2023. In-person event at Shoreline Amphitheatre. Focus on Generative AI (PaLM 2), Pixel Fold, Pixel 7a, and Pixel Tablet.
+    tags:
+      - google
+      - google-io
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: google-io-2024
+    title: Google I/O 2024
+    date: 2024-05-14
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Google_I/O
+    notes: Google I/O 2024. Announced Gemini AI updates, Firebase Genkit, and AI Overviews (formerly SGE).
+    tags:
+      - google
+      - google-io
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: google-io-2025
+    title: Google I/O 2025
+    date: 2025-05-20
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Google_I/O
+    notes: Google I/O 2025. Announced AI Mode for Search, coding agent Jules, Veo 3 video generation model, and Gemini Pro Ultra Plan.
+    tags:
+      - google
+      - google-io
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+
+  # Microsoft Build
+  - id: microsoft-build-2020
+    title: Microsoft Build 2020
+    date: 2020-05-19
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Build
+    notes: Microsoft Build 2020. Digital event. Announced .NET MAUI preview, WSL GPU support, and Windows Package Manager preview.
+    tags:
+      - microsoft
+      - build
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: microsoft-build-2021
+    title: Microsoft Build 2021
+    date: 2021-05-25
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Build
+    notes: Microsoft Build 2021. Virtual event. Announced .NET 6, Azure AI Services, Power Fx, and WSL GUI (WSLg).
+    tags:
+      - microsoft
+      - build
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: microsoft-build-2022
+    title: Microsoft Build 2022
+    date: 2022-05-24
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Build
+    notes: Microsoft Build 2022. Virtual event. Announced .NET MAUI general availability and TypeScript 4.7.
+    tags:
+      - microsoft
+      - build
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: microsoft-build-2023
+    title: Microsoft Build 2023
+    date: 2023-05-23
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Build
+    notes: Microsoft Build 2023. Hybrid event in Seattle. Major focus on AI and Copilot integration across Microsoft products. Announced Windows Copilot and Bing-ChatGPT integration.
+    tags:
+      - microsoft
+      - build
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: microsoft-build-2024
+    title: Microsoft Build 2024
+    date: 2024-05-21
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Build
+    notes: Microsoft Build 2024. Announced Copilot+ PC, Windows Copilot Library, and .NET Aspire.
+    tags:
+      - microsoft
+      - build
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: microsoft-build-2025
+    title: Microsoft Build 2025
+    date: 2025-05-19
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Build
+    notes: Microsoft Build 2025. Held at Seattle Convention Center with digital participation.
+    tags:
+      - microsoft
+      - build
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+
+  # Microsoft Ignite
+  - id: microsoft-ignite-2020
+    title: Microsoft Ignite 2020
+    date: 2020-09-22
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Ignite
+    notes: Microsoft Ignite 2020. Digital event. Originally planned for New Orleans.
+    tags:
+      - microsoft
+      - ignite
+      - it-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: microsoft-ignite-2021-march
+    title: Microsoft Ignite 2021 (March)
+    date: 2021-03-02
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Ignite
+    notes: Microsoft Ignite March 2021. Digital event.
+    tags:
+      - microsoft
+      - ignite
+      - it-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: microsoft-ignite-2021-november
+    title: Microsoft Ignite 2021 (November)
+    date: 2021-11-01
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Ignite
+    notes: Microsoft Ignite November 2021. Digital event.
+    tags:
+      - microsoft
+      - ignite
+      - it-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: microsoft-ignite-2022
+    title: Microsoft Ignite 2022
+    date: 2022-10-12
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Ignite
+    notes: Microsoft Ignite 2022. Digital and in-person hybrid event.
+    tags:
+      - microsoft
+      - ignite
+      - it-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: microsoft-ignite-2023
+    title: Microsoft Ignite 2023
+    date: 2023-11-14
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Ignite
+    notes: Microsoft Ignite 2023. Hybrid event in Seattle at the new Summit building of Seattle Convention Center.
+    tags:
+      - microsoft
+      - ignite
+      - it-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: microsoft-ignite-2024
+    title: Microsoft Ignite 2024
+    date: 2024-11-18
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Ignite
+    notes: Microsoft Ignite 2024. Held at McCormick Place in Chicago. Merged with Microsoft Inspire partner event.
+    tags:
+      - microsoft
+      - ignite
+      - it-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: microsoft-ignite-2025
+    title: Microsoft Ignite 2025
+    date: 2025-11-18
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Microsoft_Ignite
+    notes: Microsoft Ignite 2025. Will be held at Moscone Center in San Francisco with digital participation.
+    tags:
+      - microsoft
+      - ignite
+      - it-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+
+  # AWS re:Invent (gathered from official AWS sources)
+  - id: aws-reinvent-2020
+    title: AWS re:Invent 2020
+    date: 2020-11-30
+    all_day: true
+    source: https://reinvent.awsevents.com/
+    notes: AWS re:Invent 2020. Virtual event due to COVID-19. Three-week event with keynotes and sessions.
+    tags:
+      - aws
+      - amazon
+      - reinvent
+      - cloud-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: aws-reinvent-2021
+    title: AWS re:Invent 2021
+    date: 2021-11-29
+    all_day: true
+    source: https://reinvent.awsevents.com/
+    notes: AWS re:Invent 2021. In-person event in Las Vegas with virtual options.
+    tags:
+      - aws
+      - amazon
+      - reinvent
+      - cloud-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: aws-reinvent-2022
+    title: AWS re:Invent 2022
+    date: 2022-11-28
+    all_day: true
+    source: https://reinvent.awsevents.com/
+    notes: AWS re:Invent 2022. In-person event in Las Vegas.
+    tags:
+      - aws
+      - amazon
+      - reinvent
+      - cloud-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: aws-reinvent-2023
+    title: AWS re:Invent 2023
+    date: 2023-11-27
+    all_day: true
+    source: https://reinvent.awsevents.com/
+    notes: AWS re:Invent 2023. In-person event in Las Vegas.
+    tags:
+      - aws
+      - amazon
+      - reinvent
+      - cloud-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: aws-reinvent-2024
+    title: AWS re:Invent 2024
+    date: 2024-12-02
+    all_day: true
+    source: https://reinvent.awsevents.com/
+    notes: AWS re:Invent 2024. In-person event in Las Vegas.
+    tags:
+      - aws
+      - amazon
+      - reinvent
+      - cloud-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+
+  # GitHub Universe
+  - id: github-universe-2020
+    title: GitHub Universe 2020
+    date: 2020-12-08
+    all_day: true
+    source: https://githubuniverse.com/
+    notes: GitHub Universe 2020. Virtual event.
+    tags:
+      - github
+      - universe
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: github-universe-2021
+    title: GitHub Universe 2021
+    date: 2021-10-27
+    all_day: true
+    source: https://githubuniverse.com/
+    notes: GitHub Universe 2021. Virtual event.
+    tags:
+      - github
+      - universe
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: github-universe-2022
+    title: GitHub Universe 2022
+    date: 2022-11-09
+    all_day: true
+    source: https://githubuniverse.com/
+    notes: GitHub Universe 2022. Hybrid event in San Francisco.
+    tags:
+      - github
+      - universe
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: github-universe-2023
+    title: GitHub Universe 2023
+    date: 2023-11-08
+    all_day: true
+    source: https://githubuniverse.com/
+    notes: GitHub Universe 2023. Hybrid event in San Francisco. Major Copilot announcements.
+    tags:
+      - github
+      - universe
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z
+  - id: github-universe-2024
+    title: GitHub Universe 2024
+    date: 2024-10-29
+    all_day: true
+    source: https://githubuniverse.com/
+    notes: GitHub Universe 2024. Held in San Francisco.
+    tags:
+      - github
+      - universe
+      - developer-conference
+    status: confirmed
+    updated_at: 2026-02-19T15:00:00Z

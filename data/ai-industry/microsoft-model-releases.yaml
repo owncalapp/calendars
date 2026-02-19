@@ -1,0 +1,120 @@
+calendar_id: microsoft-model-releases
+title: Microsoft Model Releases
+description: Public release announcements for Microsoft AI models including Phi series and Orca.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - ai
+  - microsoft
+  - phi
+  - orca
+  - model-release
+update_frequency: on-demand
+events:
+  - id: ms-phi-1-2023-06
+    title: Phi-1 announced
+    date: 2023-06-13
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/phi-3-small-language-models/
+    notes: >-
+      1.3 billion parameter language model by Microsoft Research.
+      Trained on high-quality textbook-quality data.
+      Achieved strong performance on Python coding tasks.
+      Demonstrated that smaller models can perform well with quality training data.
+    tags:
+      - microsoft
+      - phi
+      - model-release
+      - small-language-model
+    status: confirmed
+    updated_at: 2026-02-19T15:10:00Z
+  - id: ms-orca-2023-06
+    title: Orca announced
+    date: 2023-06-18
+    all_day: true
+    source: https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/
+    notes: >-
+      13 billion parameter model from Microsoft Research.
+      Designed to mimic the reasoning processes of larger models.
+      Used imitation learning to learn from GPT-4's reasoning traces.
+      Open-source model aimed at advancing research in AI reasoning.
+    tags:
+      - microsoft
+      - orca
+      - model-release
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T15:10:00Z
+  - id: ms-phi-2-2023-12
+    title: Phi-2 announced
+    date: 2023-12-12
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/phi-3-small-language-models/
+    notes: >-
+      2.7 billion parameter language model.
+      Improved reasoning and language understanding capabilities.
+      Outperformed models up to 25x larger on various benchmarks.
+      Released via Azure AI Studio and Hugging Face.
+    tags:
+      - microsoft
+      - phi
+      - model-release
+      - small-language-model
+    status: confirmed
+    updated_at: 2026-02-19T15:10:00Z
+  - id: ms-phi-3-2024-04
+    title: Phi-3 announced
+    date: 2024-04-23
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/phi-3-small-language-models/
+    notes: >-
+      Family of small language models (mini, small, medium).
+      Phi-3-mini: 3.8B parameters.
+      Phi-3-small: 7B parameters.
+      Phi-3-medium: 14B parameters.
+      Optimized for mobile and edge devices.
+      State-of-the-art performance among small models.
+      Available on Azure AI, Hugging Face, and Ollama.
+    tags:
+      - microsoft
+      - phi
+      - model-release
+      - small-language-model
+    status: confirmed
+    updated_at: 2026-02-19T15:10:00Z
+  - id: ms-phi-3-5-2024-08
+    title: Phi-3.5 announced
+    date: 2024-08-20
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/phi-3-small-language-models/
+    notes: >-
+      Updated Phi-3 family with improved capabilities.
+      Better multilingual support.
+      Enhanced reasoning and instruction following.
+      Continued focus on efficient small language models.
+    tags:
+      - microsoft
+      - phi
+      - model-release
+      - small-language-model
+    status: confirmed
+    updated_at: 2026-02-19T15:10:00Z
+  - id: ms-phi-4-2024-12
+    title: Phi-4 announced
+    date: 2024-12-12
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/phi-3-small-language-models/
+    notes: >-
+      14 billion parameter model.
+      Significant improvements in reasoning and math capabilities.
+      Focus on high-quality synthetic data training.
+      Competitive with much larger models on reasoning tasks.
+    tags:
+      - microsoft
+      - phi
+      - model-release
+      - small-language-model
+    status: confirmed
+    updated_at: 2026-02-19T15:10:00Z
