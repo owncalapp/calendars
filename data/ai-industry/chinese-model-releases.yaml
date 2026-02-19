@@ -1,0 +1,31 @@
+calendar_id: chinese-model-releases
+title: Chinese AI Model Releases
+description: Public release announcements for Chinese AI models including Baidu, Alibaba, Tencent, and others.
+locale: zh-CN
+timezone: Asia/Shanghai
+maintainers:
+  - data-team
+tags:
+  - ai
+  - chinese
+  - model-release
+update_frequency: on-demand
+events:
+  - id: baidu-wenxin-yiyan-2023-03-16
+    title: Baidu Wenxin Yiyan (Ernie Bot) announced
+    date: 2023-03-16
+    all_day: true
+    source: https://ernie.baidu.com/
+    notes: Baidu's large language model chatbot, full name "Enhanced Representation
+      through Knowledge Integration". Built on the ERNIE series of LLMs which have
+      been in development since 2019. Initially launched for invited testing on this
+      date, with public release following on August 31, 2023 after receiving regulatory
+      approval. Reached over 200 million users by April 2024.
+    tags:
+      - baidu
+      - wenxin-yiyan
+      - ernie-bot
+      - model-release
+      - llm
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
