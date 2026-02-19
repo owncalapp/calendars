@@ -21,3 +21,27 @@ events:
       - model-release
     status: confirmed
     updated_at: 2026-02-19T00:00:00Z
+  - id: anthropic-claude-opus-4-6-2026-02-05
+    title: Anthropic Claude Opus 4.6 announced
+    date: 2026-02-05
+    all_day: true
+    source: https://www.anthropic.com/news/claude-opus-4-6
+    notes: Released with 1M token context window (beta), improved coding capabilities, and agentic task support.
+    tags:
+      - anthropic
+      - model-release
+      - opus
+    status: confirmed
+    updated_at: 2026-02-19T12:53:00Z
+  - id: anthropic-claude-sonnet-4-6-2026-02-05
+    title: Anthropic Claude Sonnet 4.6 announced
+    date: 2026-02-05
+    all_day: true
+    source: https://www.anthropic.com/news/claude-sonnet-4-6
+    notes: Released with 1M token context window (beta), computer use capabilities, and became default model for Free/Pro plans.
+    tags:
+      - anthropic
+      - model-release
+      - sonnet
+    status: confirmed
+    updated_at: 2026-02-19T12:53:00Z
