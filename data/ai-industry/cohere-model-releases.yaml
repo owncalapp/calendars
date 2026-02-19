@@ -1,0 +1,176 @@
+calendar_id: cohere-model-releases
+title: Cohere Model Releases
+description: Public release announcements for Cohere models including Command, Embed, and Aya series.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - ai
+  - cohere
+  - model-release
+  - enterprise
+update_frequency: on-demand
+events:
+  - id: cohere-command-2022-06
+    title: Cohere Command announced
+    date: 2022-06-01
+    all_day: true
+    source: https://cohere.com/blog
+    notes: >-
+      Initial release of the Command model for text generation.
+      Part of Cohere's first generation of enterprise language models.
+      Designed for business use cases like copywriting, summarization, and classification.
+    tags:
+      - cohere
+      - command
+      - model-release
+      - enterprise
+    status: confirmed
+    updated_at: 2026-02-19T14:50:00Z
+  - id: cohere-embed-2022-06
+    title: Cohere Embed announced
+    date: 2022-06-01
+    all_day: true
+    source: https://cohere.com/blog
+    notes: >-
+      Initial release of the Embed model for text embedding and semantic search.
+      Enables semantic search, classification, and clustering.
+      Designed for enterprise search and retrieval applications.
+    tags:
+      - cohere
+      - embed
+      - model-release
+      - enterprise
+    status: confirmed
+    updated_at: 2026-02-19T14:50:00Z
+  - id: cohere-generate-2022-06
+    title: Cohere Generate announced
+    date: 2022-06-01
+    all_day: true
+    source: https://cohere.com/blog
+    notes: >-
+      Initial release of the Generate model for text generation tasks.
+      Part of Cohere's foundational model suite for enterprise applications.
+    tags:
+      - cohere
+      - generate
+      - model-release
+      - enterprise
+    status: confirmed
+    updated_at: 2026-02-19T14:50:00Z
+  - id: cohere-multilingual-2022-12
+    title: Cohere Multilingual Understanding Model announced
+    date: 2022-12-14
+    all_day: true
+    source: https://cohere.com/blog
+    notes: >-
+      Multilingual model for understanding text in over 100 languages.
+      Enabled semantic search in languages other than English.
+      Helped users search for documents by meaning instead of keywords.
+    tags:
+      - cohere
+      - multilingual
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T14:50:00Z
+  - id: cohere-command-r-2024-03
+    title: Cohere Command R announced
+    date: 2024-03-01
+    all_day: true
+    source: https://cohere.com/blog
+    notes: >-
+      Retrieval-augmented generation model for enterprise use cases.
+      Designed for conversational AI and complex business workflows.
+      Balanced performance and efficiency for production deployments.
+    tags:
+      - cohere
+      - command-r
+      - model-release
+      - enterprise
+    status: confirmed
+    updated_at: 2026-02-19T14:50:00Z
+  - id: cohere-command-r-plus-2024-03
+    title: Cohere Command R+ announced
+    date: 2024-03-15
+    all_day: true
+    source: https://cohere.com/blog
+    notes: >-
+      Enhanced version of Command R with improved reasoning capabilities.
+      Better performance on complex tasks and longer context windows.
+      Designed for advanced enterprise applications.
+    tags:
+      - cohere
+      - command-r
+      - model-release
+      - enterprise
+    status: confirmed
+    updated_at: 2026-02-19T14:50:00Z
+  - id: cohere-aya-vision-2025-03
+    title: Cohere Aya Vision announced
+    date: 2025-03-04
+    all_day: true
+    source: https://cohere.com/blog
+    notes: >-
+      AI model that can describe images, translate text, and summarize information.
+      Released by Cohere Labs (nonprofit research lab).
+      Free for research use, not permitted for commercial use.
+      Best-in-class vision capabilities according to Cohere.
+    tags:
+      - cohere
+      - aya
+      - vision
+      - model-release
+      - research
+    status: confirmed
+    updated_at: 2026-02-19T14:50:00Z
+  - id: cohere-command-a-2025-03
+    title: Cohere Command A announced
+    date: 2025-03-20
+    all_day: true
+    source: https://cohere.com/blog
+    notes: >-
+      High-performance, scalable language model for enterprise.
+      Part of the Command family optimized for business applications.
+      Available through Cohere's API and cloud partnerships.
+    tags:
+      - cohere
+      - command-a
+      - model-release
+      - enterprise
+    status: confirmed
+    updated_at: 2026-02-19T14:50:00Z
+  - id: cohere-command-a-vision-2025-05
+    title: Cohere Command A Vision announced
+    date: 2025-05-15
+    all_day: true
+    source: https://cohere.com/blog
+    notes: >-
+      Vision-enabled version of Command A model.
+      Multimodal capabilities for enterprise applications.
+      Can process and understand images alongside text.
+    tags:
+      - cohere
+      - command-a
+      - vision
+      - model-release
+      - enterprise
+    status: confirmed
+    updated_at: 2026-02-19T14:50:00Z
+  - id: cohere-command-a-reasoning-2025-08
+    title: Cohere Command A Reasoning announced
+    date: 2025-08-01
+    all_day: true
+    source: https://cohere.com/blog
+    notes: >-
+      Reasoning-capable version of Command A model.
+      Enhanced logical reasoning and problem-solving capabilities.
+      Designed for complex enterprise workflows requiring multi-step reasoning.
+    tags:
+      - cohere
+      - command-a
+      - reasoning
+      - model-release
+      - enterprise
+    status: confirmed
+    updated_at: 2026-02-19T14:50:00Z
