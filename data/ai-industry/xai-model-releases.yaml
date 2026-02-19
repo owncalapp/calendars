@@ -1,0 +1,145 @@
+calendar_id: xai-model-releases
+title: xAI Model Releases
+description: Public release announcements for xAI models including Grok series.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - ai
+  - xai
+  - grok
+  - model-release
+update_frequency: on-demand
+events:
+  - id: xai-grok-1-2023-11
+    title: Grok-1 announced
+    date: 2023-11-03
+    all_day: true
+    source: https://x.ai/blog/grok
+    notes: >-
+      Initial release of Grok as a chatbot to select users.
+      Released under Apache 2.0 license on March 17, 2024.
+      Described as "a very early beta product" with rapid improvement expected.
+      Initially limited to X Premium+ subscribers.
+    tags:
+      - xai
+      - grok
+      - model-release
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T14:20:00Z
+  - id: xai-grok-1-5-2024-03
+    title: Grok-1.5 announced
+    date: 2024-03-29
+    all_day: true
+    source: https://x.ai/blog/grok-1.5
+    notes: >-
+      Improved reasoning capabilities with 128,000 token context length.
+      Released to all X Premium users on May 15, 2024.
+      Part of xAI's rapid iteration cycle.
+    tags:
+      - xai
+      - grok
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T14:20:00Z
+  - id: xai-grok-1-5v-2024-04
+    title: Grok-1.5 Vision announced
+    date: 2024-04-12
+    all_day: true
+    source: https://x.ai/blog/grok-1.5v
+    notes: >-
+      Multimodal model capable of processing visual information including documents,
+      diagrams, graphs, screenshots, and photographs.
+      Announced but never released to the public.
+    tags:
+      - xai
+      - grok
+      - model-release
+      - vision
+    status: confirmed
+    updated_at: 2026-02-19T14:20:00Z
+  - id: xai-grok-2-2024-08
+    title: Grok-2 announced
+    date: 2024-08-14
+    all_day: true
+    source: https://x.ai/blog/grok-2
+    notes: >-
+      Upgraded performance and reasoning capabilities.
+      Includes image generation using Flux by Black Forest Labs.
+      Released under xAI Community License Agreement.
+      Full Grok-2 released on August 20, 2024 (6 days after announcement).
+    tags:
+      - xai
+      - grok
+      - model-release
+      - multimodal
+    status: confirmed
+    updated_at: 2026-02-19T14:20:00Z
+  - id: xai-grok-2-mini-2024-08
+    title: Grok-2 mini announced
+    date: 2024-08-14
+    all_day: true
+    source: https://x.ai/blog/grok-2
+    notes: >-
+      "Small but capable sibling" of Grok-2.
+      Offers balance between speed and answer quality.
+      Released same day as announcement.
+    tags:
+      - xai
+      - grok
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T14:20:00Z
+  - id: xai-grok-3-2025-02
+    title: Grok 3 announced
+    date: 2025-02-17
+    all_day: true
+    source: https://x.ai/blog/grok-3
+    notes: >-
+      Flagship AI model trained with "10x" more computing power than Grok-2.
+      Utilized Colossus supercomputer with around 200,000 GPUs.
+      Introduced reasoning capabilities with Think mode and Big Brain mode.
+      Claimed to outperform GPT-4o on benchmarks like AIME and GPQA.
+      Also released Grok 3 mini for faster responses.
+      Initially limited to X Premium+ and SuperGrok subscribers.
+    tags:
+      - xai
+      - grok
+      - model-release
+      - reasoning
+    status: confirmed
+    updated_at: 2026-02-19T14:20:00Z
+  - id: xai-grok-4-2025-07
+    title: Grok 4 announced
+    date: 2025-07-09
+    all_day: true
+    source: https://x.ai/blog/grok-4
+    notes: >-
+      New flagship models Grok 4 and Grok 4 Heavy.
+      Claimed to outperform rival models in benchmark tests.
+      Released alongside anime-themed "Companions" feature.
+      Grok 4 Fast released in September 2025 with 40% fewer thinking tokens.
+    tags:
+      - xai
+      - grok
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T14:20:00Z
+  - id: xai-grok-4-1-2025-11
+    title: Grok 4.1 announced
+    date: 2025-11-17
+    all_day: true
+    source: https://x.ai/blog/grok-4
+    notes: >-
+      Incremental update with improved reasoning, multimodal understanding,
+      personality/emotional intelligence, and reduced factual hallucinations.
+      Grok 4.1 Fast variant optimized for tool-calling and agentic workflows.
+      Supports 2-million-token context window.
+    tags:
+      - xai
+      - grok
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T14:20:00Z
