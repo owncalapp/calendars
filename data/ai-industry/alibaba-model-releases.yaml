@@ -1,0 +1,33 @@
+calendar_id: alibaba-model-releases
+title: Alibaba Model Releases
+description: Public release announcements for Alibaba AI models including Tongyi Qianwen (Qwen).
+locale: zh-CN
+timezone: Asia/Shanghai
+maintainers:
+  - data-team
+tags:
+  - ai
+  - chinese
+  - model-release
+  - alibaba
+update_frequency: on-demand
+events:
+  - id: alibaba-tongyi-qianwen-2023-04-11
+    title: Alibaba Tongyi Qianwen announced
+    date: 2023-04-11
+    all_day: true
+    source: https://www.reuters.com/technology/alibaba-unveils-tongyi-qianwen-an-ai-model-similar-gpt-2023-04-11/
+    notes: Alibaba Cloud unveiled Tongyi Qianwen (Qwen), a large language model developed
+      to compete with GPT. The Chinese name literally means "to comprehend the meaning,
+      and to answer a thousand kinds of questions." Initially launched for beta testing
+      in April 2023, with public release following in September 2023 after receiving
+      regulatory approval. Many Qwen variants are released as open-weight models under
+      the Apache-2.0 license, with models ranging from 1.8B to 235B parameters.
+    tags:
+      - alibaba
+      - tongyi-qianwen
+      - qwen
+      - model-release
+      - llm
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z

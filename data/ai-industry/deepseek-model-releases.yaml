@@ -1,0 +1,114 @@
+calendar_id: deepseek-model-releases
+title: DeepSeek Model Releases
+description: Public release announcements for DeepSeek AI models.
+locale: zh-CN
+timezone: Asia/Shanghai
+maintainers:
+  - data-team
+tags:
+  - ai
+  - chinese
+  - model-release
+  - deepseek
+update_frequency: on-demand
+events:
+  - id: deepseek-llm-2024-01-05
+    title: DeepSeek LLM (Chat) released
+    date: 2024-01-05
+    all_day: true
+    source: https://github.com/deepseek-ai/DeepSeek-LLM
+    notes: DeepSeek released their first-generation large language model series including
+      7B and 67B parameter versions (both base and chat). Trained from scratch on 2 trillion
+      tokens in English and Chinese. The 67B Chat model outperformed Llama2-70B and GPT-3.5
+      in various benchmarks, particularly in coding (HumanEval 73.78%), mathematics
+      (GSM8K 84.1%), and Chinese comprehension. The model supports commercial use and
+      intermediate checkpoints were also released.
+    tags:
+      - deepseek
+      - deepseek-ai
+      - deepseek-llm
+      - model-release
+      - llm
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: deepseek-coder-2024-01-25
+    title: DeepSeek Coder released
+    date: 2024-01-25
+    all_day: true
+    source: https://github.com/deepseek-ai/DeepSeek-Coder
+    notes: DeepSeek released a series of code language models ranging from 1.3B to 33B
+      parameters, trained from scratch on 2 trillion tokens (87% code, 13% natural language).
+      Features project-level code completion with 16K window size and fill-in-the-blank
+      task support. Achieved state-of-the-art performance among open-source code models
+      on HumanEval, MultiPL-E, MBPP, DS-1000, and APPS benchmarks. DeepSeek-Coder-Instruct-33B
+      outperformed GPT-3.5-turbo on coding tasks.
+    tags:
+      - deepseek
+      - deepseek-ai
+      - deepseek-coder
+      - model-release
+      - llm
+      - code-model
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: deepseek-v2-2024-05-06
+    title: DeepSeek-V2 released
+    date: 2024-05-06
+    all_day: true
+    source: https://github.com/deepseek-ai/DeepSeek-V2
+    notes: DeepSeek released V2, a Mixture-of-Experts (MoE) language model with 236B total
+      parameters and 21B activated per token. Introduced innovative Multi-head Latent
+      Attention (MLA) and DeepSeekMoE architectures for efficient training and inference.
+      Compared to DeepSeek 67B, V2 saved 42.5% training costs, reduced KV cache by 93.3%,
+      and boosted throughput 5.76x. Supports 128K context length. A lighter version,
+      DeepSeek-V2-Lite (16B total, 2.4B activated), was released on May 16, 2024.
+    tags:
+      - deepseek
+      - deepseek-ai
+      - deepseek-v2
+      - model-release
+      - llm
+      - moe
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: deepseek-v3-2024-12-27
+    title: DeepSeek-V3 released
+    date: 2024-12-27
+    all_day: true
+    source: https://github.com/deepseek-ai/DeepSeek-V3
+    notes: DeepSeek released V3, a 671B parameter MoE model with 37B activated per token.
+      Features FP8 mixed precision training framework, auxiliary-loss-free load balancing,
+      and Multi-Token Prediction (MTP) objective. Trained on 14.8 trillion tokens with
+      only 2.788M H800 GPU hours. The model achieves performance comparable to leading
+      closed-source models like GPT-4o and Claude-3.5-Sonnet, particularly excelling
+      in math (MATH-500 90.2%) and code (HumanEval 65.2%) tasks.
+    tags:
+      - deepseek
+      - deepseek-ai
+      - deepseek-v3
+      - model-release
+      - llm
+      - moe
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: deepseek-r1-2025-01-22
+    title: DeepSeek-R1 released
+    date: 2025-01-22
+    all_day: true
+    source: https://github.com/deepseek-ai/DeepSeek-R1
+    notes: DeepSeek released R1, their first-generation reasoning model trained via
+      large-scale reinforcement learning (RL) without supervised fine-tuning as a
+      preliminary step. R1-Zero demonstrated that reasoning capabilities can emerge
+      purely through RL. R1 incorporates cold-start data before RL and achieves
+      performance comparable to OpenAI-o1 across math (AIME 2024 79.8%), code, and
+      reasoning tasks. Also released distilled models (1.5B to 70B) based on Qwen
+      and Llama that outperform OpenAI-o1-mini.
+    tags:
+      - deepseek
+      - deepseek-ai
+      - deepseek-r1
+      - model-release
+      - llm
+      - reasoning
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
