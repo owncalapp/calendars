@@ -1,0 +1,693 @@
+calendar_id: database-releases
+title: Database Releases
+description: >-
+  Major version releases of popular open source databases including PostgreSQL,
+  MySQL, MongoDB, Redis, SQLite, MariaDB, and Elasticsearch.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - database
+  - sql
+  - nosql
+  - release
+update_frequency: monthly
+events:
+  # PostgreSQL Releases
+  - id: postgresql-12-2019-10
+    title: PostgreSQL 12 Released
+    date: 2019-10-03
+    all_day: true
+    source: https://www.postgresql.org/docs/12/release-12.html
+    notes: >-
+      PostgreSQL 12 released with improvements to query performance, partitioning,
+      and JSON support. Features include generated columns, CTE improvements, and
+      better handling of large workloads.
+    tags:
+      - postgresql
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: postgresql-13-2020-09
+    title: PostgreSQL 13 Released
+    date: 2020-09-24
+    all_day: true
+    source: https://www.postgresql.org/docs/13/release-13.html
+    notes: >-
+      PostgreSQL 13 released with incremental sorting, parallel vacuum, and
+      deduplication for B-tree indexes. Improved performance for queries with
+      aggregates or partitioned tables.
+    tags:
+      - postgresql
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: postgresql-14-2021-09
+    title: PostgreSQL 14 Released
+    date: 2021-09-30
+    all_day: true
+    source: https://www.postgresql.org/docs/14/release-14.html
+    notes: >-
+      PostgreSQL 14 released with enhanced performance, multirange types, and
+      improved JSON subscripting. Added support for OUT parameters in stored
+      procedures.
+    tags:
+      - postgresql
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: postgresql-15-2022-10
+    title: PostgreSQL 15 Released
+    date: 2022-10-13
+    all_day: true
+    source: https://www.postgresql.org/docs/15/release-15.html
+    notes: >-
+      PostgreSQL 15 released with improved sort performance, compression, and
+      MERGE command support. New features include row filtering and column
+      lists for logical replication.
+    tags:
+      - postgresql
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: postgresql-16-2023-09
+    title: PostgreSQL 16 Released
+    date: 2023-09-14
+    all_day: true
+    source: https://www.postgresql.org/docs/16/release-16.html
+    notes: >-
+      PostgreSQL 16 released with improved logical replication, SQL/JSON
+      standard support, and performance enhancements. New features include
+      parallel aggregate execution and direct I/O support.
+    tags:
+      - postgresql
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: postgresql-17-2024-09
+    title: PostgreSQL 17 Released
+    date: 2024-09-26
+    all_day: true
+    source: https://www.postgresql.org/docs/17/release-17.html
+    notes: >-
+      PostgreSQL 17 released with significant performance improvements,
+      enhanced JSON support, and new partitioning features. Added support
+      for incremental backups and improved vacuum performance.
+    tags:
+      - postgresql
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  # MySQL Releases
+  - id: mysql-5-7-2015-10
+    title: MySQL 5.7 Released
+    date: 2015-10-21
+    all_day: true
+    source: https://dev.mysql.com/doc/relnotes/mysql/5.7/en/
+    notes: >-
+      MySQL 5.7 released with JSON support, performance improvements, and
+      GIS enhancements. Included improvements to the optimizer and InnoDB
+      performance schema.
+    tags:
+      - mysql
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mysql-8-0-2018-04
+    title: MySQL 8.0 Released
+    date: 2018-04-19
+    all_day: true
+    source: https://dev.mysql.com/doc/relnotes/mysql/8.0/en/
+    notes: >-
+      MySQL 8.0 released with window functions, CTEs, JSON improvements,
+      and new data dictionary. Major architectural changes including
+      improved security features and performance.
+    tags:
+      - mysql
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mysql-8-4-2024-04
+    title: MySQL 8.4 LTS Released
+    date: 2024-04-30
+    all_day: true
+    source: https://dev.mysql.com/doc/relnotes/mysql/8.4/en/
+    notes: >-
+      MySQL 8.4 LTS released with focus on stability, long-term support,
+      and cloud-native features. Provides extended support for enterprise deployments.
+    tags:
+      - mysql
+      - database-release
+      - lts
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mysql-9-0-2024-07
+    title: MySQL 9.0 Released
+    date: 2024-07-01
+    all_day: true
+    source: https://dev.mysql.com/doc/relnotes/mysql/9.0/en/
+    notes: >-
+      MySQL 9.0 released with vector type support for AI applications and
+      enhanced JSON capabilities. Introduces new features for modern
+      application development.
+    tags:
+      - mysql
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  # MongoDB Releases
+  - id: mongodb-4-0-2018-06
+    title: MongoDB 4.0 Released
+    date: 2018-06-27
+    all_day: true
+    source: https://www.mongodb.com/docs/manual/release-notes/4.0/
+    notes: >-
+      MongoDB 4.0 released with multi-document ACID transactions and
+      significant performance improvements. Added change streams
+      enhancements and improved aggregation framework.
+    tags:
+      - mongodb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mongodb-4-2-2019-08
+    title: MongoDB 4.2 Released
+    date: 2019-08-13
+    all_day: true
+    source: https://www.mongodb.com/docs/manual/release-notes/4.2/
+    notes: >-
+      MongoDB 4.2 released with distributed transactions, on-demand
+      materialized views, and wildcard indexes. Introduced client-side
+      field level encryption.
+    tags:
+      - mongodb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mongodb-4-4-2020-07
+    title: MongoDB 4.4 Released
+    date: 2020-07-25
+    all_day: true
+    source: https://www.mongodb.com/docs/manual/release-notes/4.4/
+    notes: >-
+      MongoDB 4.4 released with hidden indexes, hedged reads, and refined
+      shard balancing. Added union aggregation stage and custom
+      aggregation expressions.
+    tags:
+      - mongodb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mongodb-5-0-2021-07
+    title: MongoDB 5.0 Released
+    date: 2021-07-13
+    all_day: true
+    source: https://www.mongodb.com/docs/manual/release-notes/5.0/
+    notes: >-
+      MongoDB 5.0 released with native time series support, live resharding,
+      and versioned API. Introduced MongoDB Atlas Search enhancements.
+    tags:
+      - mongodb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mongodb-6-0-2022-07
+    title: MongoDB 6.0 Released
+    date: 2022-07-19
+    all_day: true
+    source: https://www.mongodb.com/docs/manual/release-notes/6.0/
+    notes: >-
+      MongoDB 6.0 released with clustered indexes, time series collections
+      improvements, and bulk write operations. Added change stream
+      optimizations.
+    tags:
+      - mongodb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mongodb-7-0-2023-08
+    title: MongoDB 7.0 Released
+    date: 2023-08-15
+    all_day: true
+    source: https://www.mongodb.com/docs/manual/release-notes/7.0/
+    notes: >-
+      MongoDB 7.0 released with new aggregation operators, performance
+      improvements, and Atlas enhancements. Introduced compound
+      wildcard indexes.
+    tags:
+      - mongodb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mongodb-8-0-2024-09
+    title: MongoDB 8.0 Released
+    date: 2024-09-25
+    all_day: true
+    source: https://www.mongodb.com/docs/manual/release-notes/8.0/
+    notes: >-
+      MongoDB 8.0 released with enhanced AI integrations, improved
+      scalability, and new query capabilities. Focus on developer
+      productivity and operational efficiency.
+    tags:
+      - mongodb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  # Redis Releases
+  - id: redis-5-0-2018-10
+    title: Redis 5.0 Released
+    date: 2018-10-17
+    all_day: true
+    source: https://github.com/redis/redis/releases/tag/5.0.0
+    notes: >-
+      Redis 5.0 released with Redis Streams, new sorted set commands,
+      and improved memory management. Introduced the Streams data type
+      for log-style data structures.
+    tags:
+      - redis
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: redis-6-0-2020-04
+    title: Redis 6.0 Released
+    date: 2020-04-30
+    all_day: true
+    source: https://github.com/redis/redis/releases/tag/6.0.0
+    notes: >-
+      Redis 6.0 released with threaded I/O, ACLs, SSL support, and
+      Redis Protocol 3. Major performance improvements for high-throughput
+      workloads.
+    tags:
+      - redis
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: redis-6-2-2021-03
+    title: Redis 6.2 Released
+    date: 2021-03-02
+    all_day: true
+    source: https://github.com/redis/redis/releases/tag/6.2.0
+    notes: >-
+      Redis 6.2 released with new commands, improvements to Redis Functions,
+      and performance enhancements. Added GETEX, GETDEL and other
+      convenience commands.
+    tags:
+      - redis
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: redis-7-0-2022-04
+    title: Redis 7.0 Released
+    date: 2022-04-27
+    all_day: true
+    source: https://github.com/redis/redis/releases/tag/7.0.0
+    notes: >-
+      Redis 7.0 released with Redis Functions, ACL improvements, and new
+      data structure commands. Introduced shared replication buffers for
+      better memory efficiency.
+    tags:
+      - redis
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: redis-7-2-2023-09
+    title: Redis 7.2 Released
+    date: 2023-09-06
+    all_day: true
+    source: https://github.com/redis/redis/releases/tag/7.2.0
+    notes: >-
+      Redis 7.2 released with new data types, enhanced programmability,
+      and cluster improvements. Added range queries for Streams and
+      new bitmap commands.
+    tags:
+      - redis
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: redis-7-4-2024-07
+    title: Redis 7.4 Released
+    date: 2024-07-29
+    all_day: true
+    source: https://github.com/redis/redis/releases/tag/7.4.0
+    notes: >-
+      Redis 7.4 released with hash field expiration, new cluster features,
+      and performance optimizations. Last version under BSD license before
+      license change.
+    tags:
+      - redis
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: redis-8-0-2025-05
+    title: Redis 8.0 Released
+    date: 2025-05-01
+    all_day: true
+    source: https://github.com/redis/redis/releases/tag/8.0.0
+    notes: >-
+      Redis 8.0 released with tri-license (RSAL, SSPL, AGPL), vector sets,
+      and unified package. Return to open source with AGPL option and
+      significant new features.
+    tags:
+      - redis
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  # SQLite Releases
+  - id: sqlite-3-0-2004-06
+    title: SQLite 3.0 Released
+    date: 2004-06-18
+    all_day: true
+    source: https://sqlite.org/changes.html
+    notes: >-
+      SQLite 3.0 released with internationalization, manifest typing, and
+      major architectural improvements. Complete rewrite with new file format.
+    tags:
+      - sqlite
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: sqlite-3-25-2018-09
+    title: SQLite 3.25 Released
+    date: 2018-09-15
+    all_day: true
+    source: https://sqlite.org/changes.html
+    notes: >-
+      SQLite 3.25 released with window functions support and significant
+      SQL standard compliance improvements. Added OVER clause support.
+    tags:
+      - sqlite
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: sqlite-3-35-2021-03
+    title: SQLite 3.35 Released
+    date: 2021-03-12
+    all_day: true
+    source: https://sqlite.org/changes.html
+    notes: >-
+      SQLite 3.35 released with DROP COLUMN support, RETURNING clause,
+      and mathematical functions. Major SQL feature additions.
+    tags:
+      - sqlite
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: sqlite-3-40-2022-11
+    title: SQLite 3.40 Released
+    date: 2022-11-16
+    all_day: true
+    source: https://sqlite.org/changes.html
+    notes: >-
+      SQLite 3.40 released with JSON improvements, query planner
+      enhancements, and new C APIs. Added FTS5 improvements.
+    tags:
+      - sqlite
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: sqlite-3-45-2024-01
+    title: SQLite 3.45 Released
+    date: 2024-01-15
+    all_day: true
+    source: https://sqlite.org/changes.html
+    notes: >-
+      SQLite 3.45 released with JSONB support, full-text search improvements,
+      and security enhancements. Binary JSON storage for better performance.
+    tags:
+      - sqlite
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: sqlite-3-50-2025-05
+    title: SQLite 3.50 Released
+    date: 2025-05-29
+    all_day: true
+    source: https://sqlite.org/changes.html
+    notes: >-
+      SQLite 3.50 25th Anniversary release with Unicode functions,
+      enhanced JSONB, and API improvements. Major milestone with
+      new unistr() and unistr_quote() functions.
+    tags:
+      - sqlite
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  # MariaDB Releases
+  - id: mariadb-10-0-2012-11
+    title: MariaDB 10.0 Released
+    date: 2012-11-12
+    all_day: true
+    source: https://mariadb.com/kb/en/mariadb-1000-release-notes/
+    notes: >-
+      MariaDB 10.0 released with new storage engines, parallel replication,
+      and Cassandra integration. First major release after forking from MySQL.
+    tags:
+      - mariadb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mariadb-10-1-2014-06
+    title: MariaDB 10.1 Released
+    date: 2014-06-30
+    all_day: true
+    source: https://mariadb.com/kb/en/mariadb-1010-release-notes/
+    notes: >-
+      MariaDB 10.1 released with Galera Cluster integration, encryption,
+      and performance schema. Added InnoDB improvements.
+    tags:
+      - mariadb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mariadb-10-2-2016-04
+    title: MariaDB 10.2 Released
+    date: 2016-04-18
+    all_day: true
+    source: https://mariadb.com/kb/en/mariadb-1020-release-notes/
+    notes: >-
+      MariaDB 10.2 released with window functions, CTEs, and JSON functions.
+      Added support for computed columns.
+    tags:
+      - mariadb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mariadb-10-3-2017-04
+    title: MariaDB 10.3 Released
+    date: 2017-04-16
+    all_day: true
+    source: https://mariadb.com/kb/en/mariadb-1030-release-notes/
+    notes: >-
+      MariaDB 10.3 released with temporal data processing, sequences,
+      and invisible columns. Added Oracle compatibility features.
+    tags:
+      - mariadb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mariadb-10-4-2018-11
+    title: MariaDB 10.4 Released
+    date: 2018-11-09
+    all_day: true
+    source: https://mariadb.com/kb/en/mariadb-1040-release-notes/
+    notes: >-
+      MariaDB 10.4 released with Galera 4, user password plugins, and
+      simplified variables. Added replica replay optimization.
+    tags:
+      - mariadb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mariadb-10-5-2019-12
+    title: MariaDB 10.5 Released
+    date: 2019-12-03
+    all_day: true
+    source: https://mariadb.com/kb/en/mariadb-1050-release-notes/
+    notes: >-
+      MariaDB 10.5 released with ColumnStore integration, S3 storage engine,
+      and Galera improvements. Added MyRocks engine enhancements.
+    tags:
+      - mariadb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mariadb-10-6-2021-04
+    title: MariaDB 10.6 LTS Released
+    date: 2021-04-26
+    all_day: true
+    source: https://mariadb.com/kb/en/mariadb-1060-release-notes/
+    notes: >-
+      MariaDB 10.6 LTS released with long-term support, JSON table functions,
+      and query optimizations. First designated LTS release.
+    tags:
+      - mariadb
+      - database-release
+      - lts
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mariadb-10-11-2022-09
+    title: MariaDB 10.11 LTS Released
+    date: 2022-09-26
+    all_day: true
+    source: https://mariadb.com/kb/en/mariadb-10110-release-notes/
+    notes: >-
+      MariaDB 10.11 LTS released with Oracle compatibility improvements,
+      performance enhancements, and security updates. Extended LTS support.
+    tags:
+      - mariadb
+      - database-release
+      - lts
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mariadb-11-4-2023-12
+    title: MariaDB 11.4 LTS Released
+    date: 2023-12-24
+    all_day: true
+    source: https://mariadb.com/kb/en/mariadb-1140-release-notes/
+    notes: >-
+      MariaDB 11.4 LTS released with enhanced optimizer, vector support
+      preview, and improved replication. New major version series.
+    tags:
+      - mariadb
+      - database-release
+      - lts
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: mariadb-12-0-2025-08
+    title: MariaDB 12.0 Released
+    date: 2025-08-07
+    all_day: true
+    source: https://mariadb.com/kb/en/mariadb-1200-release-notes/
+    notes: >-
+      MariaDB 12.0 GA released with major optimizer improvements,
+      enhanced JSON handling, and new features. Rolling release model.
+    tags:
+      - mariadb
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  # Elasticsearch Releases
+  - id: elasticsearch-6-0-2017-11
+    title: Elasticsearch 6.0 Released
+    date: 2017-11-14
+    all_day: true
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/6.0/release-notes-6.0.0.html
+    notes: >-
+      Elasticsearch 6.0 released with one-type-per-index, sparse fields,
+      and query improvements. Major breaking changes from 5.x.
+    tags:
+      - elasticsearch
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: elasticsearch-7-0-2019-04
+    title: Elasticsearch 7.0 Released
+    date: 2019-04-10
+    all_day: true
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/7.0/release-notes-7.0.0.html
+    notes: >-
+      Elasticsearch 7.0 released with new cluster coordination, alias
+      support, and circuit breaker improvements. Added faster top-k queries.
+    tags:
+      - elasticsearch
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: elasticsearch-7-17-2022-02
+    title: Elasticsearch 7.17 Released
+    date: 2022-02-01
+    all_day: true
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/7.17/release-notes-7.17.0.html
+    notes: >-
+      Elasticsearch 7.17 final 7.x release with security features and
+      stability improvements. Last major 7.x version before 8.0.
+    tags:
+      - elasticsearch
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: elasticsearch-8-0-2022-02
+    title: Elasticsearch 8.0 Released
+    date: 2022-02-10
+    all_day: true
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/8.0/release-notes-8.0.0.html
+    notes: >-
+      Elasticsearch 8.0 released with KNN search, native vector search,
+      and enhanced security by default. Major architectural improvements.
+    tags:
+      - elasticsearch
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: elasticsearch-8-16-2024-11
+    title: Elasticsearch 8.16 Released
+    date: 2024-11-01
+    all_day: true
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/8.16/release-notes-8.16.0.html
+    notes: >-
+      Elasticsearch 8.16 released with AGPL license option, making it
+      open source again after license change in 2021.
+    tags:
+      - elasticsearch
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
+
+  - id: elasticsearch-9-0-2025-04
+    title: Elasticsearch 9.0 Released
+    date: 2025-04-15
+    all_day: true
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/9.0/release-notes-9.0.0.html
+    notes: >-
+      Elasticsearch 9.0 released with enhanced AI capabilities, improved
+      vector search, and new aggregation features.
+    tags:
+      - elasticsearch
+      - database-release
+    status: confirmed
+    updated_at: 2026-02-19T15:30:00Z
