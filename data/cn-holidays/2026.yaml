@@ -9,5 +9,6 @@ events:
       - holiday
       - china
     status: tentative
-    notes: Official arrangement should be confirmed when the annual notice is published.
+    notes: Official arrangement should be confirmed when the annual notice is
+      published.
     updated_at: 2026-02-19T00:00:00Z

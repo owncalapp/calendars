@@ -44,6 +44,10 @@ npm run cli -- event list --calendar openai-model-releases --format json
 npm run cli -- event create --calendar openai-model-releases --event /path/to/event.yaml
 npm run cli -- event update --id openai-gpt-4o-2024-05-13 --patch /path/to/event-patch.yaml
 npm run cli -- event delete --id openai-gpt-4o-2024-05-13 --yes
+
+# sort events in files (all calendars or one calendar)
+npm run cli -- event sort
+npm run cli -- event sort --calendar cn-holidays
 ```
 
 Commands:
@@ -56,6 +60,7 @@ Commands:
 - `event create`: `--calendar <id> --event <path>` (required), `--year <yyyy>` (optional for split mode)
 - `event update`: `--id <event-id> --patch <path>` (required), `--year <yyyy>` (optional for split mode)
 - `event delete`: `--id <event-id> --yes` (required)
+- `event sort`: `--calendar <id>` (optional, omitted means sort all calendars)
 - `validate`: no options
 
 Notes:

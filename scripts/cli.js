@@ -195,7 +195,11 @@ function loadAllEvents(index) {
     if (entry.mode === "flat") {
       const payload = readYaml(entry.metaPath);
       for (const event of payload.events || []) {
-        out.push({ event, filePath: entry.metaPath, calendar_id: entry.calendar_id });
+        out.push({
+          event,
+          filePath: entry.metaPath,
+          calendar_id: entry.calendar_id,
+        });
       }
       continue;
     }
@@ -222,18 +226,24 @@ function ensureNoDuplicateEventId(index, eventId) {
   const all = loadAllEvents(index);
   const exists = all.find((x) => x.event && x.event.id === eventId);
   if (exists) {
-    die(`Duplicate event id: ${eventId} in ${path.relative(ROOT, exists.filePath)}`);
+    die(
+      `Duplicate event id: ${eventId} in ${path.relative(ROOT, exists.filePath)}`,
+    );
   }
 }
 
 function splitTargetPath(entry, event, yearOverride) {
   const source = yearOverride || (event.all_day ? event.date : event.start);
   if (!source || String(source).length < 4) {
-    die("Cannot infer split target year. Provide --year or valid event date/start.");
+    die(
+      "Cannot infer split target year. Provide --year or valid event date/start.",
+    );
   }
   const year = yearOverride || String(source).slice(0, 4);
   if (!/^\d{4}$/.test(year)) die("Invalid year for split calendar target file");
-  const dir = entry.metaPath ? path.dirname(entry.metaPath) : path.join(DATA_DIR, entry.calendar_id);
+  const dir = entry.metaPath
+    ? path.dirname(entry.metaPath)
+    : path.join(DATA_DIR, entry.calendar_id);
   return path.join(dir, `${year}.yaml`);
 }
 
@@ -246,7 +256,7 @@ function listCalendars(args) {
     const meta = entry.metaPath ? readYaml(entry.metaPath) : null;
     let eventCount = 0;
     if (entry.mode === "flat") {
-      eventCount = (meta && meta.events ? meta.events.length : 0);
+      eventCount = meta && meta.events ? meta.events.length : 0;
     } else {
       for (const p of entry.dataPaths) {
         const payload = readYaml(p);
@@ -276,15 +286,26 @@ function listEvents(args) {
     const entry = index.get(calendarId);
     if (!entry) die(`Calendar not found: ${calendarId}`);
     if (entry.mode === "flat") {
-      rows = (readYaml(entry.metaPath).events || []).map((event) => ({ ...event, calendar_id: calendarId }));
+      rows = (readYaml(entry.metaPath).events || []).map((event) => ({
+        ...event,
+        calendar_id: calendarId,
+      }));
     } else {
       for (const p of entry.dataPaths) {
         const payload = readYaml(p);
-        rows.push(...(payload.events || []).map((event) => ({ ...event, calendar_id: calendarId })));
+        rows.push(
+          ...(payload.events || []).map((event) => ({
+            ...event,
+            calendar_id: calendarId,
+          })),
+        );
       }
     }
   } else {
-    rows = loadAllEvents(index).map((x) => ({ ...x.event, calendar_id: x.calendar_id }));
+    rows = loadAllEvents(index).map((x) => ({
+      ...x.event,
+      calendar_id: x.calendar_id,
+    }));
   }
 
   rows = sortEvents(rows);
@@ -304,10 +325,16 @@ function createCalendar(args) {
     payload = readPayload(args.file, "file");
   } else {
     const maintainers = args.maintainers
-      ? String(args.maintainers).split(",").map((s) => s.trim()).filter(Boolean)
+      ? String(args.maintainers)
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean)
       : [];
     const tags = args.tags
-      ? String(args.tags).split(",").map((s) => s.trim()).filter(Boolean)
+      ? String(args.tags)
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean)
       : [];
     payload = {
       calendar_id: calendarId,
@@ -319,7 +346,9 @@ function createCalendar(args) {
       tags,
       update_frequency: args["update-frequency"] || args.update_frequency,
     };
-    Object.keys(payload).forEach((k) => payload[k] === undefined && delete payload[k]);
+    Object.keys(payload).forEach(
+      (k) => payload[k] === undefined && delete payload[k],
+    );
   }
 
   payload.calendar_id = calendarId;
@@ -334,7 +363,9 @@ function createCalendar(args) {
 
   const { validateCalendar, errorsText } = loadSchemaValidators();
   if (!validateCalendar(payload)) {
-    die(`Calendar schema validation failed: ${errorsText(validateCalendar.errors)}`);
+    die(
+      `Calendar schema validation failed: ${errorsText(validateCalendar.errors)}`,
+    );
   }
 
   const baseDir = args.dir ? path.join(DATA_DIR, args.dir) : DATA_DIR;
@@ -342,14 +373,16 @@ function createCalendar(args) {
 
   if (mode === "flat") {
     const targetPath = path.join(baseDir, `${calendarId}.yaml`);
-    if (fs.existsSync(targetPath)) die(`File exists: ${path.relative(ROOT, targetPath)}`);
+    if (fs.existsSync(targetPath))
+      die(`File exists: ${path.relative(ROOT, targetPath)}`);
     writeYaml(targetPath, payload);
     console.log(`Created calendar: ${path.relative(ROOT, targetPath)}`);
     return;
   }
 
   const dirPath = path.join(baseDir, calendarId);
-  if (fs.existsSync(dirPath)) die(`Directory exists: ${path.relative(ROOT, dirPath)}`);
+  if (fs.existsSync(dirPath))
+    die(`Directory exists: ${path.relative(ROOT, dirPath)}`);
   fs.mkdirSync(dirPath, { recursive: true });
   const targetPath = path.join(dirPath, "calendar.yaml");
   writeYaml(targetPath, payload);
@@ -360,7 +393,8 @@ function updateCalendar(args) {
   const calendarId = args.calendar;
   if (!calendarId) die("Missing --calendar <id>");
   const patch = readPayload(args.patch, "patch");
-  if (!patch || typeof patch !== "object" || Array.isArray(patch)) die("Invalid patch payload");
+  if (!patch || typeof patch !== "object" || Array.isArray(patch))
+    die("Invalid patch payload");
   if ("calendar_id" in patch) die("Patch cannot change calendar_id");
 
   const index = buildIndex();
@@ -377,7 +411,9 @@ function updateCalendar(args) {
 
   const { validateCalendar, errorsText } = loadSchemaValidators();
   if (!validateCalendar(next)) {
-    die(`Calendar schema validation failed: ${errorsText(validateCalendar.errors)}`);
+    die(
+      `Calendar schema validation failed: ${errorsText(validateCalendar.errors)}`,
+    );
   }
 
   writeYaml(entry.metaPath, next);
@@ -413,7 +449,8 @@ function createEvent(args) {
   if (!entry) die(`Calendar not found: ${calendarId}`);
 
   const event = readPayload(args.event, "event");
-  if (!event || typeof event !== "object" || Array.isArray(event)) die("Invalid event payload");
+  if (!event || typeof event !== "object" || Array.isArray(event))
+    die("Invalid event payload");
   if (!event.id) die("Event must include id");
   event.updated_at = new Date().toISOString();
 
@@ -448,7 +485,9 @@ function createEvent(args) {
 }
 
 function locateEventById(index, eventId) {
-  const found = loadAllEvents(index).find((x) => x.event && x.event.id === eventId);
+  const found = loadAllEvents(index).find(
+    (x) => x.event && x.event.id === eventId,
+  );
   return found || null;
 }
 
@@ -456,7 +495,8 @@ function updateEvent(args) {
   const eventId = args.id;
   if (!eventId) die("Missing --id <event-id>");
   const patch = readPayload(args.patch, "patch");
-  if (!patch || typeof patch !== "object" || Array.isArray(patch)) die("Invalid patch payload");
+  if (!patch || typeof patch !== "object" || Array.isArray(patch))
+    die("Invalid patch payload");
   if ("id" in patch) die("Patch cannot change id");
 
   const index = buildIndex();
@@ -466,7 +506,8 @@ function updateEvent(args) {
   const sourcePayload = readYaml(found.filePath);
   const sourceEvents = sourcePayload.events || [];
   const sourceIdx = sourceEvents.findIndex((e) => e.id === eventId);
-  if (sourceIdx < 0) die(`Event not found in ${path.relative(ROOT, found.filePath)}`);
+  if (sourceIdx < 0)
+    die(`Event not found in ${path.relative(ROOT, found.filePath)}`);
 
   const updated = { ...sourceEvents[sourceIdx], ...patch, id: eventId };
   updated.updated_at = new Date().toISOString();
@@ -531,6 +572,59 @@ function deleteEvent(args) {
   console.log(`Deleted event from ${path.relative(ROOT, found.filePath)}`);
 }
 
+function sortEventFiles(paths) {
+  const touched = [];
+  for (const filePath of paths) {
+    const payload = readYaml(filePath);
+    if (
+      !payload ||
+      typeof payload !== "object" ||
+      !Array.isArray(payload.events)
+    ) {
+      continue;
+    }
+    payload.events = sortEvents(payload.events);
+    writeYaml(filePath, payload);
+    touched.push({
+      path: path.relative(ROOT, filePath),
+      count: payload.events.length,
+    });
+  }
+  return touched;
+}
+
+function sortEventsCommand(args) {
+  const index = buildIndex();
+  const calendarId = args.calendar;
+  let targets = [];
+
+  if (calendarId) {
+    const entry = index.get(calendarId);
+    if (!entry) die(`Calendar not found: ${calendarId}`);
+    if (entry.mode === "flat") {
+      targets = [entry.metaPath];
+    } else {
+      targets = entry.dataPaths.slice();
+    }
+  } else {
+    for (const entry of index.values()) {
+      if (entry.mode === "flat") {
+        targets.push(entry.metaPath);
+      } else {
+        targets.push(...entry.dataPaths);
+      }
+    }
+  }
+
+  const touched = sortEventFiles(targets);
+  console.log(
+    YAML.stringify({
+      sorted_files: touched.length,
+      files: touched,
+    }),
+  );
+}
+
 function runValidate() {
   require("./validate.js");
 }
@@ -547,6 +641,7 @@ function printHelp() {
       "  npm run cli -- event create --calendar <id> --event <path> [--year <yyyy>]",
       "  npm run cli -- event update --id <event-id> --patch <path> [--year <yyyy>]",
       "  npm run cli -- event delete --id <event-id> --yes",
+      "  npm run cli -- event sort [--calendar <id>]",
       "  npm run cli -- validate",
     ].join("\n"),
   );
@@ -580,6 +675,7 @@ function main() {
     if (action === "create") return createEvent(args);
     if (action === "update") return updateEvent(args);
     if (action === "delete") return deleteEvent(args);
+    if (action === "sort") return sortEventsCommand(args);
     die(`Unknown event action: ${action || "(missing)"}`);
   }
 
