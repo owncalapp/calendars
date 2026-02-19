@@ -1,15 +1,15 @@
-# Pending AI Model Calendar Tasks
+# Pending Calendar Tasks
 
-This file tracks pending AI company model calendars to be added.
+This file tracks pending calendar data tasks to be processed.
 Auto-processed by cron job every hour.
 
-## Queue
+## AI Model Calendars
 
-### Phase 1: High Priority (In Progress)
+### Phase 1: High Priority
 - [x] OpenAI - ✅ Completed (PR #3)
 - [x] Anthropic - ✅ Completed (PR #2)
 - [x] Google - ✅ Completed (PR #4)
-- [ ] Meta (Llama 1/2/3/4, Code Llama) - 🔄 Next
+- [ ] Meta (Llama 1/2/3/4, Code Llama)
 - [ ] Mistral AI (Mistral 7B, Mixtral, Mistral Large)
 - [ ] xAI (Grok 1/2/3)
 
@@ -25,12 +25,18 @@ Auto-processed by cron job every hour.
 - [ ] Databricks (DBRX)
 - [ ] Snowflake (Arctic)
 
+## Future Categories (Non-AI)
+- [ ] Cloud Provider Releases (AWS, Azure, GCP major services)
+- [ ] Programming Language Releases (Python, JavaScript, Rust, Go)
+- [ ] Framework Releases (React, Vue, Angular, Django)
+- [ ] Database Releases (PostgreSQL, MySQL, MongoDB)
+
 ## Instructions for Agent
 
 When processing next task:
-1. Read Wikipedia page for company model history
-2. Verify dates from official company sources
-3. Create calendar YAML file in data/ai-industry/
+1. Research topic from reliable sources
+2. Verify dates from official sources
+3. Create calendar YAML file in appropriate directory
 4. Run: npm run cli -- validate
 5. Create branch, commit, push
 6. Create PR with comprehensive description
