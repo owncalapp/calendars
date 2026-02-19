@@ -105,3 +105,25 @@ events:
       - llm
     status: confirmed
     updated_at: 2026-02-19T00:00:00Z
+  - id: moonshot-kimi-chat-2023-11-16
+    title: Moonshot AI Kimi Chat public release
+    date: 2023-11-16
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Kimi_(chatbot)
+    notes: Moonshot AI (月之暗面) released Kimi Chat to the general public based on their
+      "Moonshot" large language model. Moonshot AI was founded in March 2023, released
+      Kimi for closed beta testing in October 2023, and opened it to the public on
+      November 16, 2023. The first version supported 128,000 tokens of context
+      (approximately 200,000 Chinese characters), making it the first AI model capable
+      of accepting contexts of this size. Later versions expanded context to 2 million
+      characters. The model is available via web app, iOS, and Android.
+    tags:
+      - moonshot
+      - moonshot-ai
+      - kimi
+      - kimi-chat
+      - 月之暗面
+      - model-release
+      - llm
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
