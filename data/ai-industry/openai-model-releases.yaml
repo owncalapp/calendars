@@ -11,13 +11,203 @@ tags:
   - model-release
 update_frequency: on-demand
 events:
+  - id: openai-gpt-1-2018-06-11
+    title: OpenAI GPT-1 announced
+    date: 2018-06-11
+    all_day: true
+    source: https://openai.com/research/language-unsupervised
+    notes: First Generative Pre-trained Transformer model, trained on BooksCorpus dataset with 117M parameters.
+    tags:
+      - openai
+      - model-release
+      - gpt
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-gpt-2-2019-02-14
+    title: OpenAI GPT-2 announced
+    date: 2019-02-14
+    all_day: true
+    source: https://openai.com/research/better-language-models
+    notes: 1.5B parameter model with improved text generation capabilities. Initially released in stages due to safety concerns.
+    tags:
+      - openai
+      - model-release
+      - gpt
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-gpt-3-2020-06-11
+    title: OpenAI GPT-3 announced
+    date: 2020-06-11
+    all_day: true
+    source: https://openai.com/research/language-models-are-few-shot-learners
+    notes: 175B parameter model demonstrating few-shot learning capabilities. Available via API.
+    tags:
+      - openai
+      - model-release
+      - gpt
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-dall-e-2021-01-05
+    title: OpenAI DALL-E announced
+    date: 2021-01-05
+    all_day: true
+    source: https://openai.com/research/dall-e
+    notes: Text-to-image generation model capable of creating images from textual descriptions.
+    tags:
+      - openai
+      - model-release
+      - dall-e
+      - image-generation
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-codex-2021-08-10
+    title: OpenAI Codex announced
+    date: 2021-08-10
+    all_day: true
+    source: https://openai.com/blog/openai-codex
+    notes: AI system that translates natural language to code, powering GitHub Copilot.
+    tags:
+      - openai
+      - model-release
+      - codex
+      - coding
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-chatgpt-2022-11-30
+    title: OpenAI ChatGPT released
+    date: 2022-11-30
+    all_day: true
+    source: https://openai.com/blog/chatgpt
+    notes: Conversational AI model based on GPT-3.5, optimized for dialogue. Reached 100 million users in 2 months.
+    tags:
+      - openai
+      - model-release
+      - chatgpt
+      - gpt-3.5
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-gpt-4-2023-03-14
+    title: OpenAI GPT-4 announced
+    date: 2023-03-14
+    all_day: true
+    source: https://openai.com/research/gpt-4
+    notes: Multimodal model accepting text and image inputs. Significant improvement in reasoning and reliability over GPT-3.5.
+    tags:
+      - openai
+      - model-release
+      - gpt-4
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-dall-e-3-2023-09-20
+    title: OpenAI DALL-E 3 announced
+    date: 2023-09-20
+    all_day: true
+    source: https://openai.com/dall-e-3
+    notes: Improved text-to-image model with better prompt understanding and image quality. Integrated with ChatGPT.
+    tags:
+      - openai
+      - model-release
+      - dall-e
+      - image-generation
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-gpt-4-turbo-2023-11-06
+    title: OpenAI GPT-4 Turbo announced
+    date: 2023-11-06
+    all_day: true
+    source: https://openai.com/blog/new-models-and-developer-products-announced-at-devday
+    notes: Improved version with 128K context window, lower pricing, and knowledge cutoff of April 2023.
+    tags:
+      - openai
+      - model-release
+      - gpt-4
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
   - id: openai-gpt-4o-2024-05-13
     title: OpenAI GPT-4o announced
     date: 2024-05-13
     all_day: true
     source: https://openai.com/index/hello-gpt-4o/
+    notes: Omni model with native multimodal capabilities (text, audio, image). Faster and cheaper than GPT-4 Turbo.
     tags:
       - openai
       - model-release
+      - gpt-4o
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-gpt-4o-mini-2024-07-18
+    title: OpenAI GPT-4o mini announced
+    date: 2024-07-18
+    all_day: true
+    source: https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/
+    notes: Cost-efficient small model with 82% MMLU score. Priced at 15 cents per million input tokens.
+    tags:
+      - openai
+      - model-release
+      - gpt-4o
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-o1-2024-09-12
+    title: OpenAI o1 announced
+    date: 2024-09-12
+    all_day: true
+    source: https://openai.com/index/learning-to-reason-with-llms/
+    notes: Reasoning model trained with reinforcement learning to think before responding. Excels at complex reasoning tasks.
+    tags:
+      - openai
+      - model-release
+      - o1
+      - reasoning
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-o1-mini-2024-09-12
+    title: OpenAI o1-mini announced
+    date: 2024-09-12
+    all_day: true
+    source: https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/
+    notes: Cost-efficient reasoning model, 80% cheaper than o1-preview. Optimized for STEM reasoning.
+    tags:
+      - openai
+      - model-release
+      - o1
+      - reasoning
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-gpt-4-5-2025-02-27
+    title: OpenAI GPT-4.5 announced
+    date: 2025-02-27
+    all_day: true
+    source: https://openai.com/index/introducing-gpt-4-5/
+    notes: Research preview of next-generation model with improved emotional intelligence and creativity.
+    tags:
+      - openai
+      - model-release
+      - gpt
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-gpt-5-2025-07-14
+    title: OpenAI GPT-5 announced
+    date: 2025-07-14
+    all_day: true
+    source: https://openai.com/index/introducing-gpt-5/
+    notes: Next-generation foundation model with significant improvements in reasoning, coding, and multimodal capabilities.
+    tags:
+      - openai
+      - model-release
+      - gpt
+      - gpt-5
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: openai-o3-2025-12-20
+    title: OpenAI o3 and o4-mini announced
+    date: 2025-12-20
+    all_day: true
+    source: https://openai.com/index/introducing-o3-and-o4-mini/
+    notes: Next-generation reasoning models with improved performance on complex tasks. o4-mini offers efficient reasoning at lower cost.
+    tags:
+      - openai
+      - model-release
+      - o3
+      - reasoning
     status: confirmed
     updated_at: 2026-02-19T00:00:00Z
