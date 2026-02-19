@@ -34,16 +34,73 @@ events:
     date: 2023-04-11
     all_day: true
     source: https://www.reuters.com/technology/alibaba-unveils-tongyi-qianwen-an-ai-model-similar-gpt-2023-04-11/
-    notes: Alibaba Cloud unveiled Tongyi Qianwen (Qwen), a large language model developed 
-      to compete with GPT. The Chinese name literally means "to comprehend the meaning, 
-      and to answer a thousand kinds of questions." Initially launched for beta testing 
-      in April 2023, with public release following in September 2023 after receiving 
-      regulatory approval. Many Qwen variants are released as open-weight models under 
+    notes: Alibaba Cloud unveiled Tongyi Qianwen (Qwen), a large language model developed
+      to compete with GPT. The Chinese name literally means "to comprehend the meaning,
+      and to answer a thousand kinds of questions." Initially launched for beta testing
+      in April 2023, with public release following in September 2023 after receiving
+      regulatory approval. Many Qwen variants are released as open-weight models under
       the Apache-2.0 license, with models ranging from 1.8B to 235B parameters.
     tags:
       - alibaba
       - tongyi-qianwen
       - qwen
+      - model-release
+      - llm
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: zhipu-chatglm-6b-2023-03-16
+    title: Zhipu AI ChatGLM-6B released
+    date: 2023-03-16
+    all_day: true
+    source: https://github.com/THUDM/ChatGLM-6B
+    notes: Zhipu AI and Tsinghua KEG Lab released ChatGLM-6B, an open-source bilingual
+      (Chinese-English) dialogue language model with 6.2 billion parameters. Based on
+      the General Language Model (GLM) architecture, it was trained on approximately 1T
+      tokens of Chinese and English corpus. The model supports local deployment on
+      consumer-grade GPUs (6GB VRAM with INT4 quantization) and became one of the most
+      popular open-source Chinese LLMs.
+    tags:
+      - zhipu
+      - chatglm
+      - chatglm-6b
+      - model-release
+      - llm
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: zhipu-chatglm2-6b-2023-06-25
+    title: Zhipu AI ChatGLM2-6B released
+    date: 2023-06-25
+    all_day: true
+    source: https://github.com/THUDM/ChatGLM2-6B
+    notes: Zhipu AI released ChatGLM2-6B, the second-generation version of ChatGLM-6B.
+      Key improvements include 1.4T tokens of pretraining data (vs 1T), context length
+      extended from 2K to 32K tokens using FlashAttention, 42% faster inference speed,
+      and significant performance gains on benchmarks (MMLU +23%, C-Eval +33%,
+      GSM8K +571%). The model supports multi-query attention and maintains the ability
+      to run on consumer-grade hardware.
+    tags:
+      - zhipu
+      - chatglm
+      - chatglm2
+      - model-release
+      - llm
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: zhipu-chatglm3-2023-10-27
+    title: Zhipu AI ChatGLM3 released
+    date: 2023-10-27
+    all_day: true
+    source: https://github.com/THUDM/ChatGLM3
+    notes: Zhipu AI announced ChatGLM3 at the Zhipu AI Dev Day. The third generation
+      includes ChatGLM3-6B with stronger base model capabilities (best performance
+      among sub-10B models), native support for function calling, code interpreter,
+      and agent tasks. The release also included base model (ChatGLM3-6B-Base) and
+      extended context variants (32K and 128K). This marked Zhipu's continued
+      commitment to open-source Chinese LLMs.
+    tags:
+      - zhipu
+      - chatglm
+      - chatglm3
       - model-release
       - llm
     status: confirmed
