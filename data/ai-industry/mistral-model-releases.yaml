@@ -1,0 +1,324 @@
+calendar_id: mistral-model-releases
+title: Mistral AI Model Releases
+description: Public release announcements for Mistral AI models including Mistral 7B, Mixtral, and Mistral Large series.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - ai
+  - mistral
+  - model-release
+  - french
+update_frequency: on-demand
+events:
+  - id: mistral-7b-2023-09
+    title: Mistral 7B announced
+    date: 2023-09-27
+    all_day: true
+    source: https://mistral.ai/news/announcing-mistral-7b/
+    notes: >-
+      First model from Mistral AI, released via BitTorrent magnet link and Hugging Face.
+      7.3B parameter language model using transformers architecture.
+      Released under Apache 2.0 license.
+      Outperformed LLaMA 2 13B on all benchmarks despite smaller size.
+    tags:
+      - mistral
+      - model-release
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-mixtral-8x7b-2023-12
+    title: Mixtral 8x7B announced
+    date: 2023-12-11
+    all_day: true
+    source: https://mistral.ai/news/mixtral-of-experts/
+    notes: >-
+      First sparse Mixture of Experts (MoE) model from Mistral.
+      46.7B total parameters with 12.9B active parameters per token.
+      Released via BitTorrent link on December 9, official announcement on December 11.
+      Outperformed GPT-3.5 on most benchmarks.
+    tags:
+      - mistral
+      - mixtral
+      - model-release
+      - moe
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-medium-2023-12
+    title: Mistral Medium announced
+    date: 2023-12-11
+    all_day: true
+    source: https://mistral.ai/news/la-plateforme/
+    notes: >-
+      Proprietary model trained in English, French, Italian, German, and Spanish.
+      Launched alongside Mistral's "La Plateforme" API service.
+      Architecture and parameter count not publicly disclosed.
+    tags:
+      - mistral
+      - model-release
+      - proprietary
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-large-2024-02
+    title: Mistral Large announced
+    date: 2024-02-26
+    all_day: true
+    source: https://mistral.ai/news/mistral-large/
+    notes: >-
+      Flagship proprietary model with multilingual support.
+      Available on Microsoft Azure.
+      Outputs in English, French, Spanish, German, and Italian.
+      Launched alongside Le Chat conversational assistant.
+    tags:
+      - mistral
+      - model-release
+      - proprietary
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-small-2024-02
+    title: Mistral Small announced
+    date: 2024-02-26
+    all_day: true
+    source: https://mistral.ai/news/mistral-large/
+    notes: >-
+      Smaller proprietary model launched alongside Mistral Large.
+      Part of Mistral's model lineup on "La Plateforme" API.
+    tags:
+      - mistral
+      - model-release
+      - proprietary
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-mixtral-8x22b-2024-04
+    title: Mixtral 8x22B announced
+    date: 2024-04-10
+    all_day: true
+    source: https://mistral.ai/news/
+    notes: >-
+      Larger MoE model with 141B total parameters.
+      Each expert has 22B parameters (vs 7B in Mixtral 8x7B).
+      Released via BitTorrent link on Twitter, then on Hugging Face.
+      Higher performance than Mixtral 8x7B with similar inference cost.
+    tags:
+      - mistral
+      - mixtral
+      - model-release
+      - moe
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-codestral-2024-05
+    title: Codestral 22B announced
+    date: 2024-05-29
+    all_day: true
+    source: https://mistral.ai/news/codestral/
+    notes: >-
+      First code-focused open weight model from Mistral.
+      22B parameters, fluent in 80+ programming languages.
+      Released under Mistral Non-Production License.
+      Designed for code completion and generation tasks.
+    tags:
+      - mistral
+      - codestral
+      - model-release
+      - code-generation
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-mathstral-2024-07
+    title: Mathstral 7B announced
+    date: 2024-07-16
+    all_day: true
+    source: https://mistral.ai/news/mathstral/
+    notes: >-
+      7B parameter model focused on STEM subjects.
+      Collaboration with Project Numina.
+      Released under Apache 2.0 License.
+      32k token context length.
+    tags:
+      - mistral
+      - mathstral
+      - model-release
+      - stem
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-codestral-mamba-2024-07
+    title: Codestral Mamba 7B announced
+    date: 2024-07-16
+    all_day: true
+    source: https://mistral.ai/news/codestral-mamba/
+    notes: >-
+      Based on Mamba 2 architecture for faster, longer code generation.
+      Released under Apache 2.0 license.
+      Allows generation of longer responses compared to transformer models.
+    tags:
+      - mistral
+      - codestral
+      - mamba
+      - model-release
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-large-2-2024-07
+    title: Mistral Large 2 announced
+    date: 2024-07-24
+    all_day: true
+    source: https://mistral.ai/news/
+    notes: >-
+      123B parameter model with 128K token context window.
+      Released with open weights under Mistral Research License.
+      Fluent in dozens of languages and programming languages.
+      Available on Hugging Face.
+    tags:
+      - mistral
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-pixtral-2024-09
+    title: Pixtral announced
+    date: 2024-09-10
+    all_day: true
+    source: https://mistral.ai/news/
+    notes: >-
+      12B parameter multimodal model with vision capabilities.
+      Released under Apache 2.0 license.
+      First vision-capable model from Mistral.
+    tags:
+      - mistral
+      - pixtral
+      - model-release
+      - vision
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-ministral-3b-8b-2024-10
+    title: Ministral 3B and 8B announced
+    date: 2024-10-15
+    all_day: true
+    source: https://mistral.ai/news/
+    notes: >-
+      Small, efficient models for edge devices.
+      Ministral 3B (proprietary) and Ministral 8B (research license).
+      Designed for on-device AI applications.
+    tags:
+      - mistral
+      - ministral
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-pixtral-large-2024-11
+    title: Pixtral Large announced
+    date: 2024-11-19
+    all_day: true
+    source: https://mistral.ai/news/mistral-chat/
+    notes: >-
+      124B parameter multimodal model.
+      Integrates 1B parameter visual encoder with Mistral Large 2.
+      Launched alongside major Le Chat upgrades including image generation.
+    tags:
+      - mistral
+      - pixtral
+      - model-release
+      - vision
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-small-3-2025-01
+    title: Mistral Small 3 announced
+    date: 2025-01-28
+    all_day: true
+    source: https://mistral.ai/news/mistral-small-3/
+    notes: >-
+      24B parameter model released under Apache 2.0 license.
+      Designed as a leader in the small models category.
+      Balanced performance and efficiency for various use cases.
+    tags:
+      - mistral
+      - model-release
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-small-3-1-2025-03
+    title: Mistral Small 3.1 announced
+    date: 2025-03-17
+    all_day: true
+    source: https://mistral.ai/news/mistral-small-3-1/
+    notes: >-
+      Updated version of Mistral Small 3 with image understanding capabilities.
+      24B parameters, Apache 2.0 license.
+      New leader in small multimodal models category.
+    tags:
+      - mistral
+      - model-release
+      - vision
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-medium-3-2025-05
+    title: Mistral Medium 3 announced
+    date: 2025-05-07
+    all_day: true
+    source: https://mistral.ai/news/mistral-medium-3/
+    notes: >-
+      Enterprise model available for on-premise deployment.
+      "Medium is the new large" - delivering large model performance at medium scale.
+      Designed for enterprise use cases requiring data privacy.
+    tags:
+      - mistral
+      - model-release
+      - enterprise
+      - proprietary
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-large-3-2025-12
+    title: Mistral Large 3 announced
+    date: 2025-12-03
+    all_day: true
+    source: https://mistral.ai/news/mistral-3/
+    notes: >-
+      Sparse Mixture of Experts model with 675B total parameters, 41B active.
+      Released under Apache 2.0 license.
+      High performance with efficient inference.
+    tags:
+      - mistral
+      - model-release
+      - moe
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-ministral-3-2025-12
+    title: Ministral 3 announced
+    date: 2025-12-02
+    all_day: true
+    source: https://mistral.ai/news/mistral-3/
+    notes: >-
+      Three small dense models with 3B, 8B, and 14B parameters.
+      All models feature image understanding capabilities.
+      Released under Apache 2.0 license.
+      Designed for edge AI applications.
+    tags:
+      - mistral
+      - ministral
+      - model-release
+      - vision
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
+  - id: mistral-devstral-2-2025-12
+    title: Devstral 2 and Devstral Small 2 announced
+    date: 2025-12-10
+    all_day: true
+    source: https://mistral.ai/news/devstral-2-vibe-cli/
+    notes: >-
+      Devstral 2: 123B parameter dense model for coding (modified MIT license).
+      Devstral Small 2: 24B parameter compact coding model (Apache 2.0).
+      Released alongside Mistral Vibe CLI for AI-assisted development.
+      Optimized for software engineering tasks.
+    tags:
+      - mistral
+      - devstral
+      - model-release
+      - code-generation
+    status: confirmed
+    updated_at: 2026-02-19T14:15:00Z
