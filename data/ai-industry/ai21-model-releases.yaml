@@ -1,0 +1,146 @@
+calendar_id: ai21-model-releases
+title: AI21 Labs Model Releases
+description: Public release announcements for AI21 Labs models including Jurassic and Jamba series.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - ai
+  - ai21
+  - jurassic
+  - jamba
+  - model-release
+update_frequency: on-demand
+events:
+  - id: ai21-wordtune-2020-10
+    title: Wordtune launched
+    date: 2020-10-27
+    all_day: true
+    source: https://www.ai21.com/blog
+    notes: >-
+      AI-based writing assistant that understands context.
+      Can suggest paraphrases and rewrites.
+      First product from AI21 Labs.
+      Named one of Google's favorite Chrome extensions of 2021.
+    tags:
+      - ai21
+      - wordtune
+      - product-launch
+    status: confirmed
+    updated_at: 2026-02-19T15:08:00Z
+  - id: ai21-jurassic-1-2021-08
+    title: Jurassic-1 announced
+    date: 2021-08-11
+    all_day: true
+    source: https://www.ai21.com/blog
+    notes: >-
+      Natural language processing system launched via AI21 Studio.
+      Token vocabulary over 250,000.
+      Designed to rival GPT-3.
+      First major language model from AI21 Labs.
+    tags:
+      - ai21
+      - jurassic
+      - model-release
+      - llm
+    status: confirmed
+    updated_at: 2026-02-19T15:08:00Z
+  - id: ai21-jurassic-2-2023-03
+    title: Jurassic-2 announced
+    date: 2023-03-09
+    all_day: true
+    source: https://www.ai21.com/blog
+    notes: >-
+      Improved version with better response times.
+      Understands more languages than Jurassic-1.
+      Features advanced instruction following.
+      Positioned as competitor to OpenAI models.
+    tags:
+      - ai21
+      - jurassic
+      - model-release
+      - llm
+    status: confirmed
+    updated_at: 2026-02-19T15:08:00Z
+  - id: ai21-wordtune-spices-2023-01
+    title: Wordtune Spices launched
+    date: 2023-01-17
+    all_day: true
+    source: https://www.ai21.com/blog
+    notes: >-
+      Generative AI tool that generates text options to enhance sentences.
+      AI writing assistant that cites its sources.
+      Expansion of the Wordtune product line.
+    tags:
+      - ai21
+      - wordtune
+      - product-launch
+    status: confirmed
+    updated_at: 2026-02-19T15:08:00Z
+  - id: ai21-jamba-2024-03
+    title: Jamba announced
+    date: 2024-03-29
+    all_day: true
+    source: https://www.ai21.com/blog/announcing-jamba
+    notes: >-
+      Open weights large language model.
+      Built on hybrid Mamba SSM-Transformer architecture.
+      Uses mixture of experts.
+      Context lengths up to 256,000 tokens.
+      First production-grade Mamba-based model.
+    tags:
+      - ai21
+      - jamba
+      - model-release
+      - open-source
+      - mamba
+    status: confirmed
+    updated_at: 2026-02-19T15:08:00Z
+  - id: ai21-jamba-1-5-2024-09
+    title: Jamba 1.5 family announced
+    date: 2024-09-23
+    all_day: true
+    source: https://aws.amazon.com/blogs/aws/jamba-1-5-family-of-models-by-ai21-labs-is-now-available-in-amazon-bedrock/
+    notes: >-
+      Available on Amazon Bedrock for enterprise integration.
+      Partnership with AWS to enable enterprise applications.
+      Family of models with improved capabilities.
+    tags:
+      - ai21
+      - jamba
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:08:00Z
+  - id: ai21-jamba-1-6-2025-03
+    title: Jamba 1.6 announced
+    date: 2025-03-03
+    all_day: true
+    source: https://www.ai21.com/blog
+    notes: >-
+      Released for private enterprise deployment.
+      Claimed to outperform other open models across multiple benchmarks.
+      Focus on enterprise-grade performance and security.
+    tags:
+      - ai21
+      - jamba
+      - model-release
+      - enterprise
+    status: confirmed
+    updated_at: 2026-02-19T15:08:00Z
+  - id: ai21-maestro-2025-03
+    title: Maestro announced
+    date: 2025-03-10
+    all_day: true
+    source: https://www.ai21.com/blog
+    notes: >-
+      AI planning and orchestration system.
+      Aimed at improving accuracy of GPT-4o and Claude 3.5 Sonnet in complex tasks.
+      Focus on enhancing existing AI systems rather than replacing them.
+    tags:
+      - ai21
+      - maestro
+      - product-launch
+      - orchestration
+    status: confirmed
+    updated_at: 2026-02-19T15:08:00Z
