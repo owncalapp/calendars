@@ -1,0 +1,166 @@
+calendar_id: stability-model-releases
+title: Stability AI Model Releases
+description: Public release announcements for Stability AI models including Stable Diffusion and StableLM.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - ai
+  - stability
+  - stable-diffusion
+  - image-generation
+  - model-release
+update_frequency: on-demand
+events:
+  - id: stability-sd-1-2022-08
+    title: Stable Diffusion 1.0 announced
+    date: 2022-08-22
+    all_day: true
+    source: https://stability.ai/blog/stable-diffusion-announcement
+    notes: >-
+      Initial release of Stable Diffusion text-to-image model.
+      Developed by CompVis group at LMU Munich, Runway, and Stability AI.
+      Latent diffusion model with 860M parameters in U-Net.
+      Can run on consumer GPUs with as little as 2.4GB VRAM.
+      Released under Creative ML OpenRAIL-M license.
+    tags:
+      - stability
+      - stable-diffusion
+      - model-release
+      - image-generation
+    status: confirmed
+    updated_at: 2026-02-19T15:05:00Z
+  - id: stability-sd-1-5-2022-10
+    title: Stable Diffusion 1.5 announced
+    date: 2022-10-20
+    all_day: true
+    source: https://stability.ai/news
+    notes: >-
+      Released by RunwayML with minor improvements over version 1.4.
+      983M parameters.
+      Initialized with weights of 1.2.
+    tags:
+      - stability
+      - stable-diffusion
+      - model-release
+      - image-generation
+    status: confirmed
+    updated_at: 2026-02-19T15:05:00Z
+  - id: stability-sd-2-0-2022-11
+    title: Stable Diffusion 2.0 announced
+    date: 2022-11-24
+    all_day: true
+    source: https://stability.ai/news
+    notes: >-
+      Retrained from scratch on a filtered dataset.
+      Introduced native 768x768 resolution generation.
+      Released with depth2img model for depth-guided image generation.
+    tags:
+      - stability
+      - stable-diffusion
+      - model-release
+      - image-generation
+    status: confirmed
+    updated_at: 2026-02-19T15:05:00Z
+  - id: stability-sd-2-1-2022-12
+    title: Stable Diffusion 2.1 announced
+    date: 2022-12-07
+    all_day: true
+    source: https://stability.ai/news
+    notes: >-
+      Initialized with weights of 2.0.
+      Improvements over 2.0 with better prompt adherence.
+    tags:
+      - stability
+      - stable-diffusion
+      - model-release
+      - image-generation
+    status: confirmed
+    updated_at: 2026-02-19T15:05:00Z
+  - id: stability-stablelm-2023-04
+    title: StableLM announced
+    date: 2023-04-19
+    all_day: true
+    source: https://stability.ai/news
+    notes: >-
+      Open-source language model by Stability AI.
+      Released in various sizes for different use cases.
+      Part of Stability AI's expansion beyond image generation.
+    tags:
+      - stability
+      - stablelm
+      - model-release
+      - llm
+    status: confirmed
+    updated_at: 2026-02-19T15:05:00Z
+  - id: stability-sd-xl-1-0-2023-07
+    title: Stable Diffusion XL 1.0 announced
+    date: 2023-07-26
+    all_day: true
+    source: https://stability.ai/news
+    notes: >-
+      Significant upgrade with 3.5 billion parameters.
+      Native 1024x1024 resolution support.
+      Two text encoders (OpenCLIP ViT-bigG and CLIP ViT-L).
+      SDXL Refiner released for adding fine details.
+      Much improved text generation and human limb rendering.
+    tags:
+      - stability
+      - stable-diffusion
+      - sdxl
+      - model-release
+      - image-generation
+    status: confirmed
+    updated_at: 2026-02-19T15:05:00Z
+  - id: stability-sd-xl-turbo-2023-11
+    title: Stable Diffusion XL Turbo announced
+    date: 2023-11-28
+    all_day: true
+    source: https://stability.ai/news
+    notes: >-
+      Distilled from XL 1.0 to run in fewer diffusion steps.
+      Real-time image generation capabilities.
+      Optimized for speed while maintaining quality.
+    tags:
+      - stability
+      - stable-diffusion
+      - sdxl
+      - model-release
+      - image-generation
+    status: confirmed
+    updated_at: 2026-02-19T15:05:00Z
+  - id: stability-sd-3-2024-02
+    title: Stable Diffusion 3 announced (early preview)
+    date: 2024-02-15
+    all_day: true
+    source: https://stability.ai/news/stable-diffusion-3-research-paper
+    notes: >-
+      Complete architecture change from UNet to Rectified Flow Transformer.
+      Multimodal Diffusion Transformer (MMDiT) architecture.
+      Family of models with 800M to 8B parameters.
+      Improved text understanding and generation.
+    tags:
+      - stability
+      - stable-diffusion
+      - model-release
+      - image-generation
+    status: confirmed
+    updated_at: 2026-02-19T15:05:00Z
+  - id: stability-sd-3-5-2024-10
+    title: Stable Diffusion 3.5 announced
+    date: 2024-10-22
+    all_day: true
+    source: https://stability.ai/news/introducing-stable-diffusion-3-5
+    notes: >-
+      Family of models with Large (8B params), Large Turbo, and Medium (2.5B params).
+      Released under Stability AI Community License.
+      Commercial enterprises with revenue >$1M need Enterprise License.
+      Available on Amazon Bedrock for enterprise usage.
+    tags:
+      - stability
+      - stable-diffusion
+      - model-release
+      - image-generation
+    status: confirmed
+    updated_at: 2026-02-19T15:05:00Z
