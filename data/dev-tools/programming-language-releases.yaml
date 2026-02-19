@@ -1,0 +1,407 @@
+calendar_id: programming-language-releases
+title: Programming Language Releases
+description: Major version releases of popular programming languages including Python, Node.js, Go, Rust, Java, and TypeScript.
+locale: en-US
+timezone: UTC
+maintainers:
+  - dev-tools-team
+tags:
+  - programming-language
+  - release
+  - development
+update_frequency: quarterly
+events:
+  # Python Releases
+  - id: python-3-9-2020-10-05
+    title: Python 3.9.0 released
+    date: 2020-10-05
+    all_day: true
+    source: https://www.python.org/downloads/release/python-390/
+    notes: Python 3.9 release with dictionary merge operators, type hinting lists and dictionaries, string methods removeprefix/removesuffix.
+    tags:
+      - python
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: python-3-10-2021-10-04
+    title: Python 3.10.0 released
+    date: 2021-10-04
+    all_day: true
+    source: https://www.python.org/downloads/release/python-3100/
+    notes: Python 3.10 with structural pattern matching, union types as X|Y, context managers improvements.
+    tags:
+      - python
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: python-3-11-2022-10-24
+    title: Python 3.11.0 released
+    date: 2022-10-24
+    all_day: true
+    source: https://www.python.org/downloads/release/python-3110/
+    notes: Python 3.11 with significant performance improvements (10-60% faster), exception groups, fine-grained error locations.
+    tags:
+      - python
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: python-3-12-2023-10-02
+    title: Python 3.12.0 released
+    date: 2023-10-02
+    all_day: true
+    source: https://www.python.org/downloads/release/python-3120/
+    notes: Python 3.12 with improved error messages, f-string enhancements, type parameter syntax, performance improvements.
+    tags:
+      - python
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: python-3-13-2024-10-07
+    title: Python 3.13.0 released
+    date: 2024-10-07
+    all_day: true
+    source: https://www.python.org/downloads/release/python-3130/
+    notes: Python 3.13 with new interactive interpreter, experimental JIT compiler, improved error messages, free-threaded CPython support.
+    tags:
+      - python
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Node.js Releases
+  - id: nodejs-14-2020-04-21
+    title: Node.js 14.0.0 released
+    date: 2020-04-21
+    all_day: true
+    source: https://nodejs.org/en/blog/release/v14.0.0
+    notes: Node.js 14 with improved diagnostics, V8 8.1, async local storage, hardening of streams APIs.
+    tags:
+      - nodejs
+      - javascript
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: nodejs-16-2021-04-20
+    title: Node.js 16.0.0 released
+    date: 2021-04-20
+    all_day: true
+    source: https://nodejs.org/en/blog/release/v16.0.0
+    notes: Node.js 16 with V8 9.0, npm 7, Apple Silicon support, stable timers promises API.
+    tags:
+      - nodejs
+      - javascript
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: nodejs-18-2022-04-19
+    title: Node.js 18.0.0 released
+    date: 2022-04-19
+    all_day: true
+    source: https://nodejs.org/en/blog/release/v18.0.0
+    notes: Node.js 18 with native fetch API, V8 10.1, core test runner module, OpenSSL 3.0.
+    tags:
+      - nodejs
+      - javascript
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: nodejs-20-2023-04-18
+    title: Node.js 20.0.0 released
+    date: 2023-04-18
+    all_day: true
+    source: https://nodejs.org/en/blog/release/v20.0.0
+    notes: Node.js 20 with V8 11.3, single executable applications, permission model improvements, stable test runner.
+    tags:
+      - nodejs
+      - javascript
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: nodejs-22-2024-04-24
+    title: Node.js 22.0.0 released
+    date: 2024-04-24
+    all_day: true
+    source: https://nodejs.org/en/blog/release/v22.0.0
+    notes: Node.js 22 with V8 12.4, require(esm) enabled by default, improved performance for AbortController.
+    tags:
+      - nodejs
+      - javascript
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Go Releases
+  - id: go-1-16-2021-02-16
+    title: Go 1.16 released
+    date: 2021-02-16
+    all_day: true
+    source: https://go.dev/doc/go1.16
+    notes: Go 1.16 with embed package, io/fs package, improved modules support, Apple Silicon support.
+    tags:
+      - go
+      - golang
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: go-1-18-2022-03-15
+    title: Go 1.18 released
+    date: 2022-03-15
+    all_day: true
+    source: https://go.dev/doc/go1.18
+    notes: Go 1.18 with generics support, workspaces, fuzzing, improved performance.
+    tags:
+      - go
+      - golang
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: go-1-20-2023-02-01
+    title: Go 1.20 released
+    date: 2023-02-01
+    all_day: true
+    source: https://go.dev/doc/go1.20
+    notes: Go 1.20 with comparable constraints, improved errors.Join, context with cancel cause, runtime improvements.
+    tags:
+      - go
+      - golang
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: go-1-22-2024-02-06
+    title: Go 1.22 released
+    date: 2024-02-06
+    all_day: true
+    source: https://go.dev/doc/go1.22
+    notes: Go 1.22 with enhanced for loops, improved HTTP routing, slices.Concat, maps.Clone.
+    tags:
+      - go
+      - golang
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: go-1-23-2024-08-13
+    title: Go 1.23 released
+    date: 2024-08-13
+    all_day: true
+    source: https://go.dev/doc/go1.23
+    notes: Go 1.23 with iterators support, improved telemetry, swiss tables for maps, enhanced slices package.
+    tags:
+      - go
+      - golang
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: go-1-24-2025-02-11
+    title: Go 1.24 released
+    date: 2025-02-11
+    all_day: true
+    source: https://go.dev/doc/go1.24
+    notes: Go 1.24 with go tool command, enhanced generic type inference, swiss tables for runtime map.
+    tags:
+      - go
+      - golang
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Rust Releases
+  - id: rust-1-50-2021-02-11
+    title: Rust 1.50.0 released
+    date: 2021-02-11
+    all_day: true
+    source: https://blog.rust-lang.org/2021/02/11/Rust-1.50.0.html
+    notes: Rust 1.50 with const generics MVP, dependency improvements, library stabilizations.
+    tags:
+      - rust
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: rust-1-60-2022-04-07
+    title: Rust 1.60.0 released
+    date: 2022-04-07
+    all_day: true
+    source: https://blog.rust-lang.org/2022/04/07/Rust-1.60.0.html
+    notes: Rust 1.60 with source-based code coverage, panic messages for enums, LLVM 14.
+    tags:
+      - rust
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: rust-1-70-2023-06-01
+    title: Rust 1.70.0 released
+    date: 2023-06-01
+    all_day: true
+    source: https://blog.rust-lang.org/2023/06/01/Rust-1.70.0.html
+    notes: Rust 1.70 with OnceCell and OnceLock stabilized, IsTerminal trait, build performance improvements.
+    tags:
+      - rust
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: rust-1-75-2024-01-04
+    title: Rust 1.75.0 released
+    date: 2024-01-04
+    all_day: true
+    source: https://blog.rust-lang.org/2024/01/04/Rust-1.75.0.html
+    notes: Rust 1.75 with async fn in traits, impl Trait in return position, pointer byte offset APIs.
+    tags:
+      - rust
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: rust-1-80-2024-07-25
+    title: Rust 1.80.0 released
+    date: 2024-07-25
+    all_day: true
+    source: https://blog.rust-lang.org/2024/07/25/Rust-1.80.0.html
+    notes: Rust 1.80 with LazyCell and LazyLock stabilized, exclusive range patterns in matches.
+    tags:
+      - rust
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: rust-1-85-2025-02-20
+    title: Rust 1.85.0 released
+    date: 2025-02-20
+    all_day: true
+    source: https://blog.rust-lang.org/
+    notes: Rust 1.85 with async closures, type alias impl trait in associated types, various stabilizations.
+    tags:
+      - rust
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Java Releases
+  - id: java-se-11-2018-09-25
+    title: Java SE 11 (LTS) released
+    date: 2018-09-25
+    all_day: true
+    source: https://www.oracle.com/java/technologies/javase-jdk11-downloads.html
+    notes: Java 11 LTS with new HTTP client, Epsilon garbage collector, ZGC, local variable syntax for lambdas, removed Java EE and CORBA modules.
+    tags:
+      - java
+      - lts
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: java-se-17-2021-09-14
+    title: Java SE 17 (LTS) released
+    date: 2021-09-14
+    all_day: true
+    source: https://openjdk.org/projects/jdk/17/
+    notes: Java 17 LTS with sealed classes, pattern matching for switch (preview), macOS/AArch64 port, removal of experimental AOT and JIT compiler.
+    tags:
+      - java
+      - lts
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: java-se-21-2023-09-19
+    title: Java SE 21 (LTS) released
+    date: 2023-09-19
+    all_day: true
+    source: https://openjdk.org/projects/jdk/21/
+    notes: Java 21 LTS with virtual threads (Project Loom), sequenced collections, string templates (preview), generational ZGC.
+    tags:
+      - java
+      - lts
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: java-se-23-2024-09-17
+    title: Java SE 23 released
+    date: 2024-09-17
+    all_day: true
+    source: https://openjdk.org/projects/jdk/23/
+    notes: Java 23 with markdown documentation comments, primitive patterns in switch (preview), module import declarations (preview).
+    tags:
+      - java
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: java-se-24-2025-03-18
+    title: Java SE 24 released
+    date: 2025-03-18
+    all_day: true
+    source: https://openjdk.org/projects/jdk/24/
+    notes: Java 24 with improvements to concurrency primitives, foreign function and memory API, string templates (second preview), vector API.
+    tags:
+      - java
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # TypeScript Releases
+  - id: typescript-4-5-2021-11-17
+    title: TypeScript 4.5 released
+    date: 2021-11-17
+    all_day: true
+    source: https://devblogs.microsoft.com/typescript/announcing-typescript-4-5/
+    notes: TypeScript 4.5 with Awaited type, type modifiers on import names, tail-call elimination, improved es2022 module support.
+    tags:
+      - typescript
+      - javascript
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: typescript-4-9-2022-11-15
+    title: TypeScript 4.9 released
+    date: 2022-11-15
+    all_day: true
+    source: https://devblogs.microsoft.com/typescript/announcing-typescript-4-9/
+    notes: TypeScript 4.9 with satisfies operator, auto-accessors in classes, improved type narrowing, performance optimizations.
+    tags:
+      - typescript
+      - javascript
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: typescript-5-0-2023-03-16
+    title: TypeScript 5.0 released
+    date: 2023-03-16
+    all_day: true
+    source: https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/
+    notes: TypeScript 5.0 with decorators support, const type parameters, bundler module resolution, performance and size optimizations.
+    tags:
+      - typescript
+      - javascript
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: typescript-5-5-2024-06-20
+    title: TypeScript 5.5 released
+    date: 2024-06-20
+    all_day: true
+    source: https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/
+    notes: TypeScript 5.5 with inferred type predicates, regular expression syntax checking, type imports in JSDoc, array method type inference.
+    tags:
+      - typescript
+      - javascript
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: typescript-5-6-2024-09-09
+    title: TypeScript 5.6 released
+    date: 2024-09-09
+    all_day: true
+    source: https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/
+    notes: TypeScript 5.6 with advanced type inference improvements, variadic tuple enhancements, partial module declarations, iterator helper methods.
+    tags:
+      - typescript
+      - javascript
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+  - id: typescript-5-7-2024-11-22
+    title: TypeScript 5.7 released
+    date: 2024-11-22
+    all_day: true
+    source: https://devblogs.microsoft.com/typescript/announcing-typescript-5-7/
+    notes: TypeScript 5.7 with better type checking for computed properties, improved error messages for types, enhanced support for CommonJS and ESM.
+    tags:
+      - typescript
+      - javascript
+      - release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
