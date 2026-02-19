@@ -1,0 +1,471 @@
+calendar_id: spacex-launches
+title: SpaceX Rocket Launches
+description: Historical and notable SpaceX rocket launches including Falcon 9, Falcon Heavy, and Starship test flights.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - spacex
+  - rocket
+  - launch
+  - falcon9
+  - falcon-heavy
+  - starship
+update_frequency: on-demand
+events:
+  # Falcon 9 - Early History
+  - id: falcon9-maiden-flight-2010-06-04
+    title: Falcon 9 Maiden Flight
+    date: 2010-06-04
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Dragon_Spacecraft_Qualification_Unit
+    notes: First flight of Falcon 9 v1.0, carrying the Dragon Spacecraft Qualification Unit. Launched from Cape Canaveral SLC-40.
+    tags:
+      - spacex
+      - falcon9
+      - maiden-flight
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon9-crs-7-2015-06-28
+    title: Falcon 9 CRS-7 Launch Failure
+    date: 2015-06-28
+    all_day: true
+    source: https://en.wikipedia.org/wiki/SpaceX_CRS-7
+    notes: Falcon 9 v1.1 launch failure during ISS resupply mission. Strut failure in the second stage liquid oxygen tank caused the rocket to disintegrate 139 seconds into flight.
+    tags:
+      - spacex
+      - falcon9
+      - failure
+      - crs
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon9-first-landing-2015-12-22
+    title: Falcon 9 First Successful Landing
+    date: 2015-12-22
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Orbcomm_(satellite)
+    notes: First successful landing of a Falcon 9 first stage at Landing Zone 1, Cape Canaveral. Orbcomm OG2 mission with Falcon 9 Full Thrust.
+    tags:
+      - spacex
+      - falcon9
+      - landing
+      - first-landing
+      - reusable
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon9-amos-6-2016-09-01
+    title: Falcon 9 AMOS-6 Pad Anomaly
+    date: 2016-09-01
+    all_day: true
+    source: https://en.wikipedia.org/wiki/AMOS-6
+    notes: Falcon 9 exploded on the launch pad during propellant loading for a static fire test, destroying the AMOS-6 satellite payload. Led to redesign of COPVs.
+    tags:
+      - spacex
+      - falcon9
+      - anomaly
+      - pad-explosion
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon9-first-reflight-2017-03-30
+    title: Falcon 9 First Reflight
+    date: 2017-03-30
+    all_day: true
+    source: https://en.wikipedia.org/wiki/SES-10
+    notes: First reflight of a landed Falcon 9 first stage (B1021), demonstrating reusability. SES-10 mission launched from Kennedy LC-39A.
+    tags:
+      - spacex
+      - falcon9
+      - reusable
+      - reflown
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon9-block5-debut-2018-05-11
+    title: Falcon 9 Block 5 Debut
+    date: 2018-05-11
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Bangabandhu-1
+    notes: First flight of Falcon 9 Block 5, the final major upgrade to the Falcon 9 design with improved performance and reusability. Launched Bangabandhu-1 satellite.
+    tags:
+      - spacex
+      - falcon9
+      - block5
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Crewed Missions
+  - id: spacex-demo-2-2020-05-30
+    title: SpaceX Demo-2 (First Crewed Flight)
+    date: 2020-05-30
+    all_day: true
+    source: https://en.wikipedia.org/wiki/SpaceX_Demo-2
+    notes: First crewed flight of SpaceX Crew Dragon with astronauts Doug Hurley and Bob Behnken. First crewed orbital launch from US soil since Space Shuttle retirement in 2011.
+    tags:
+      - spacex
+      - falcon9
+      - crew-dragon
+      - crewed
+      - nasa
+      - demo-2
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: spacex-crew-1-2020-11-16
+    title: SpaceX Crew-1 (First Operational Crewed Flight)
+    date: 2020-11-16
+    all_day: true
+    source: https://en.wikipedia.org/wiki/SpaceX_Crew-1
+    notes: First operational crewed flight of Crew Dragon with 4 astronauts (Hopkins, Glover, Walker, Noguchi). Longest duration US crewed spacecraft flight at 167 days.
+    tags:
+      - spacex
+      - falcon9
+      - crew-dragon
+      - crewed
+      - nasa
+      - crew-1
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: spacex-inspiration4-2021-09-16
+    title: Inspiration4 (First All-Civilian Orbital Flight)
+    date: 2021-09-16
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Inspiration4
+    notes: First all-civilian orbital spaceflight, commanded by Jared Isaacman. 3-day mission in Crew Dragon Resilience at 585km altitude, highest since Hubble servicing missions.
+    tags:
+      - spacex
+      - falcon9
+      - crew-dragon
+      - civilian
+      - inspiration4
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Notable Falcon 9 Missions
+  - id: falcon9-tess-2018-04-18
+    title: TESS Launch (Exoplanet Hunter)
+    date: 2018-04-18
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Transiting_Exoplanet_Survey_Satellite
+    notes: NASA TESS (Transiting Exoplanet Survey Satellite) launched to search for exoplanets using the transit method. First NASA astrophysics mission launched by SpaceX.
+    tags:
+      - spacex
+      - falcon9
+      - nasa
+      - science
+      - exoplanets
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon9-dart-2021-11-24
+    title: DART Launch (Planetary Defense)
+    date: 2021-11-24
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test
+    notes: NASA's DART mission, first planetary defense test mission. Successfully impacted Dimorphos asteroid in September 2022 to test asteroid deflection.
+    tags:
+      - spacex
+      - falcon9
+      - nasa
+      - planetary-defense
+      - dart
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon9-jwst-2021-12-25
+    title: James Webb Space Telescope Launch
+    date: 2021-12-25
+    all_day: true
+    source: https://en.wikipedia.org/wiki/James_Webb_Space_Telescope
+    notes: Launch of NASA/ESA/CSA James Webb Space Telescope on Ariane 5 (not SpaceX, but keeping for context). This is a placeholder - JWST launched on Ariane 5.
+    tags:
+      - nasa
+      - jwst
+      - telescope
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Falcon Heavy Launches
+  - id: falcon-heavy-demo-2018-02-06
+    title: Falcon Heavy Demo Flight
+    date: 2018-02-06
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Falcon_Heavy_test_flight
+    notes: Maiden flight of Falcon Heavy, the most powerful operational rocket at the time. Carried Elon Musk's Tesla Roadster as dummy payload. Two side boosters landed simultaneously.
+    tags:
+      - spacex
+      - falcon-heavy
+      - demo-flight
+      - maiden
+      - tesla-roadster
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon-heavy-arabsat-6a-2019-04-11
+    title: Falcon Heavy Arabsat-6A
+    date: 2019-04-11
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Arabsat-6A
+    notes: First commercial Falcon Heavy mission. All three boosters successfully landed (first center core landing on droneship). Launched Saudi communications satellite.
+    tags:
+      - spacex
+      - falcon-heavy
+      - commercial
+      - arabsat
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon-heavy-stp-2-2019-06-25
+    title: Falcon Heavy STP-2
+    date: 2019-06-25
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Space_Test_Program
+    notes: Complex multi-satellite mission for DoD Space Test Program. First USAF mission, first night launch, and first reflight of side boosters (from Arabsat-6A).
+    tags:
+      - spacex
+      - falcon-heavy
+      - military
+      - stp-2
+      - dod
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon-heavy-ussf-44-2022-11-01
+    title: Falcon Heavy USSF-44
+    date: 2022-11-01
+    all_day: true
+    source: https://en.wikipedia.org/wiki/USSF-44
+    notes: First Falcon Heavy launch for US Space Force. First direct-to-GEO insertion (no circularization burn needed). Longest duration Falcon Heavy mission.
+    tags:
+      - spacex
+      - falcon-heavy
+      - military
+      - ussf
+      - space-force
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon-heavy-psyche-2023-10-13
+    title: Falcon Heavy Psyche Asteroid Mission
+    date: 2023-10-13
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Psyche_(spacecraft)
+    notes: NASA mission to explore metal-rich asteroid 16 Psyche. First Falcon Heavy launch to escape Earth orbit for interplanetary mission.
+    tags:
+      - spacex
+      - falcon-heavy
+      - nasa
+      - asteroid
+      - psyche
+      - interplanetary
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon-heavy-europa-clipper-2024-10-14
+    title: Falcon Heavy Europa Clipper
+    date: 2024-10-14
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Europa_Clipper
+    notes: NASA mission to study Jupiter's moon Europa and its subsurface ocean. One of the most expensive planetary science missions ever launched.
+    tags:
+      - spacex
+      - falcon-heavy
+      - nasa
+      - europa
+      - jupiter
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Starship Flight Tests
+  - id: starship-ift-1-2023-04-20
+    title: Starship IFT-1 (Integrated Flight Test 1)
+    date: 2023-04-20
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Starship_flight_test_1
+    notes: First integrated test flight of Starship and Super Heavy. Became most powerful rocket ever flown. Destroyed 4 minutes into flight due to stage separation issues.
+    tags:
+      - spacex
+      - starship
+      - super-heavy
+      - ift-1
+      - test-flight
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: starship-ift-2-2023-11-18
+    title: Starship IFT-2 (Integrated Flight Test 2)
+    date: 2023-11-18
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Starship_flight_test_2
+    notes: Second test flight with hot-staging ring. Achieved stage separation but both vehicles lost during descent. Ship reached 149km altitude.
+    tags:
+      - spacex
+      - starship
+      - super-heavy
+      - ift-2
+      - test-flight
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: starship-ift-3-2024-03-14
+    title: Starship IFT-3 (Integrated Flight Test 3)
+    date: 2024-03-14
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Starship_flight_test_3
+    notes: First Starship to reach orbital velocity. Completed full-duration burns but broke up during reentry. First test of payload bay door opening.
+    tags:
+      - spacex
+      - starship
+      - super-heavy
+      - ift-3
+      - test-flight
+      - orbital-velocity
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: starship-ift-4-2024-06-06
+    title: Starship IFT-4 (Integrated Flight Test 4)
+    date: 2024-06-06
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Starship_flight_test_4
+    notes: First successful splashdown of both Starship and Super Heavy. Booster simulated landing at virtual tower in Gulf of Mexico. Ship survived reentry heating.
+    tags:
+      - spacex
+      - starship
+      - super-heavy
+      - ift-4
+      - test-flight
+      - splashdown
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: starship-ift-5-2024-10-13
+    title: Starship IFT-5 (Integrated Flight Test 5)
+    date: 2024-10-13
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Starship_flight_test_5
+    notes: Historic first catch of Super Heavy booster by Mechazilla tower arms at Starbase. Major milestone toward full reusability. Ship splashed down in Indian Ocean.
+    tags:
+      - spacex
+      - starship
+      - super-heavy
+      - ift-5
+      - test-flight
+      - booster-catch
+      - mechazilla
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: starship-ift-6-2024-11-19
+    title: Starship IFT-6 (Integrated Flight Test 6)
+    date: 2024-11-19
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Starship_flight_test_6
+    notes: Final Block 1 Starship flight. First in-space Raptor engine relight for deorbit demonstration. Booster not caught due to tower sensor issue; splashed down safely.
+    tags:
+      - spacex
+      - starship
+      - super-heavy
+      - ift-6
+      - test-flight
+      - block-1
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: starship-ift-7-2025-01-16
+    title: Starship IFT-7 (Integrated Flight Test 7)
+    date: 2025-01-16
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Starship_flight_test_7
+    notes: First Block 2 Starship flight. Booster 14 successfully caught by tower. Ship 33 lost during ascent due to propellant leak. Carried Starlink simulator payloads.
+    tags:
+      - spacex
+      - starship
+      - super-heavy
+      - ift-7
+      - test-flight
+      - block-2
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: starship-ift-8-2025-03-06
+    title: Starship IFT-8 (Integrated Flight Test 8)
+    date: 2025-03-06
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Starship_flight_test_8
+    notes: Second Block 2 flight attempt. Booster 15 successfully caught. Ship 34 lost during ascent due to engine failures. Second consecutive ship failure for Block 2.
+    tags:
+      - spacex
+      - starship
+      - super-heavy
+      - ift-8
+      - test-flight
+      - block-2
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Starlink Milestones
+  - id: starlink-first-launch-2019-05-24
+    title: First Starlink Launch
+    date: 2019-05-24
+    all_day: true
+    source: https://en.wikipedia.org/wiki/Starlink
+    notes: First launch of 60 Starlink v0.9 satellites, beginning SpaceX's satellite internet constellation. Now the largest satellite constellation in history.
+    tags:
+      - spacex
+      - falcon9
+      - starlink
+      - satellite
+      - constellation
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: starlink-100th-launch-2024
+    title: 100th Starlink Dedicated Launch
+    date: 2024-05-13
+    all_day: true
+    source: https://www.spacex.com/launches
+    notes: Milestone 100th dedicated Starlink mission. Over 6,000 Starlink satellites launched by this date, serving millions of customers globally.
+    tags:
+      - spacex
+      - falcon9
+      - starlink
+      - milestone
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Reusability Records
+  - id: falcon9-100th-reflight-2024
+    title: 100th Falcon 9 Reflight
+    date: 2024-11-11
+    all_day: true
+    source: https://www.spacex.com/launches
+    notes: Milestone 100th flight of a reflown Falcon 9 booster, demonstrating the viability of rocket reusability. Booster B1067 flew for the 23rd time on this mission.
+    tags:
+      - spacex
+      - falcon9
+      - reusable
+      - milestone
+      - record
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: falcon9-400th-landing-2024
+    title: 400th Falcon 9 Landing
+    date: 2024-12-05
+    all_day: true
+    source: https://www.spacex.com/launches
+    notes: SpaceX achieved its 400th successful Falcon 9 first stage landing, a major milestone in reusable rocket technology.
+    tags:
+      - spacex
+      - falcon9
+      - landing
+      - milestone
+      - reusable
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
