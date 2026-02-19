@@ -1,0 +1,286 @@
+calendar_id: image-video-generation-releases
+title: Image and Video Generation Model Releases
+description: Public release announcements for AI image and video generation models including Midjourney, Runway, DALL-E, and more.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - ai
+  - image-generation
+  - video-generation
+  - model-release
+update_frequency: on-demand
+events:
+  - id: mj-v1-2022-02
+    title: Midjourney V1 released
+    date: 2022-02-01
+    all_day: true
+    source: https://www.midjourney.com/
+    notes: >-
+      First version of Midjourney image generation model.
+      Launched by Midjourney, Inc. in San Francisco.
+    tags:
+      - midjourney
+      - image-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: mj-v2-2022-04
+    title: Midjourney V2 released
+    date: 2022-04-12
+    all_day: true
+    source: https://www.midjourney.com/
+    notes: >-
+      Improved algorithm with better character and animal rendering.
+      Significant quality improvements over V1.
+    tags:
+      - midjourney
+      - image-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: mj-open-beta-2022-07
+    title: Midjourney open beta launched
+    date: 2022-07-12
+    all_day: true
+    source: https://www.midjourney.com/
+    notes: >-
+      Midjourney entered open beta.
+      Available through Discord bot commands.
+      Made AI image generation accessible to the public.
+    tags:
+      - midjourney
+      - image-generation
+      - product-launch
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: mj-v3-2022-07
+    title: Midjourney V3 released
+    date: 2022-07-25
+    all_day: true
+    source: https://www.midjourney.com/
+    notes: >-
+      Third version of the algorithm.
+      Further improvements in image quality and coherence.
+    tags:
+      - midjourney
+      - image-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: mj-v4-2022-11
+    title: Midjourney V4 released
+    date: 2022-11-05
+    all_day: true
+    source: https://www.midjourney.com/
+    notes: >-
+      Alpha iteration of version 4.
+      Models trained on Google TPUs.
+      Significant leap in image quality and prompt understanding.
+    tags:
+      - midjourney
+      - image-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: dalle-2-2022-07
+    title: DALL-E 2 launched
+    date: 2022-07-20
+    all_day: true
+    source: https://openai.com/dall-e-2
+    notes: >-
+      OpenAI's text-to-image generation model.
+      Successor to the original DALL-E.
+      Released in beta to limited users.
+    tags:
+      - openai
+      - dall-e
+      - image-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: runway-gen-1-2023-02
+    title: Runway Gen-1 announced
+    date: 2023-02-06
+    all_day: true
+    source: https://runwayml.com/
+    notes: >-
+      Video generation model by Runway.
+      Can generate videos from images or text prompts.
+      Foundation for future video generation models.
+    tags:
+      - runway
+      - video-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: mj-v5-2023-03
+    title: Midjourney V5 released
+    date: 2023-03-15
+    all_day: true
+    source: https://www.midjourney.com/
+    notes: >-
+      Alpha iteration of version 5.
+      Much better with hands and fine details.
+      Improved prompt understanding and coherence.
+    tags:
+      - midjourney
+      - image-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: mj-v5-1-2023-05
+    title: Midjourney V5.1 released
+    date: 2023-05-03
+    all_day: true
+    source: https://www.midjourney.com/
+    notes: >-
+      More opinionated model with own stylization.
+      RAW mode for more literal prompts.
+      Enhanced aesthetics system.
+    tags:
+      - midjourney
+      - image-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: runway-gen-2-2023-06
+    title: Runway Gen-2 announced
+    date: 2023-06-26
+    all_day: true
+    source: https://runwayml.com/
+    notes: >-
+      Next generation video generation model.
+      Text-to-video capabilities.
+      Higher quality and longer video generation.
+    tags:
+      - runway
+      - video-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: mj-v5-2-2023-06
+    title: Midjourney V5.2 released
+    date: 2023-06-22
+    all_day: true
+    source: https://www.midjourney.com/
+    notes: >-
+      New aesthetics system.
+      Zoom out feature for generating surroundings.
+      Better prompt understanding.
+    tags:
+      - midjourney
+      - image-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: dalle-3-2023-09
+    title: DALL-E 3 launched
+    date: 2023-09-20
+    all_day: true
+    source: https://openai.com/dall-e-3
+    notes: >-
+      Latest version of OpenAI's image generation model.
+      Significantly improved text rendering in images.
+      Better prompt adherence and nuance.
+      Integrated with ChatGPT.
+    tags:
+      - openai
+      - dall-e
+      - image-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: mj-v6-2023-12
+    title: Midjourney V6 released
+    date: 2023-12-21
+    all_day: true
+    source: https://www.midjourney.com/
+    notes: >-
+      Alpha iteration of version 6.
+      Trained from scratch over nine months.
+      Better text rendition support.
+      More literal interpretation of prompts.
+    tags:
+      - midjourney
+      - image-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: pika-1-0-2023-11
+    title: Pika 1.0 announced
+    date: 2023-11-28
+    all_day: true
+    source: https://pika.art/
+    notes: >-
+      AI video generation platform by Pika Labs.
+      Text-to-video and image-to-video capabilities.
+      Free public access.
+    tags:
+      - pika-labs
+      - video-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: mj-v6-1-2024-07
+    title: Midjourney V6.1 released
+    date: 2024-07-31
+    all_day: true
+    source: https://www.midjourney.com/
+    notes: >-
+      Quality improvements over V6.
+      Better coherence and detail.
+      Released alongside web interface launch.
+    tags:
+      - midjourney
+      - image-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: sora-2024-02
+    title: Sora announced
+    date: 2024-02-15
+    all_day: true
+    source: https://openai.com/sora
+    notes: >-
+      OpenAI's text-to-video generation model.
+      Can generate realistic and imaginative scenes up to 60 seconds.
+      Announced but not publicly released initially.
+    tags:
+      - openai
+      - sora
+      - video-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: mj-v7-2025-04
+    title: Midjourney V7 released
+    date: 2025-04-04
+    all_day: true
+    source: https://www.midjourney.com/
+    notes: >-
+      Alpha iteration of version 7.
+      First new AI image model in nearly a year.
+      Significant improvements in image quality.
+    tags:
+      - midjourney
+      - image-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
+  - id: sora-public-2024-12
+    title: Sora public release
+    date: 2024-12-09
+    all_day: true
+    source: https://openai.com/sora
+    notes: >-
+      Sora made available to the public.
+      ChatGPT Plus and Pro users can access video generation.
+    tags:
+      - openai
+      - sora
+      - video-generation
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T15:12:00Z
