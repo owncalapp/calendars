@@ -1,0 +1,23 @@
+calendar_id: anthropic-model-releases
+title: Anthropic Model Releases
+description: Public release announcements for Anthropic models.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - ai
+  - anthropic
+  - model-release
+update_frequency: on-demand
+events:
+  - id: anthropic-claude-3-5-sonnet-2024-06-20
+    title: Anthropic Claude 3.5 Sonnet announced
+    date: 2024-06-20
+    all_day: true
+    source: https://www.anthropic.com/news/claude-3-5-sonnet
+    tags:
+      - anthropic
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z

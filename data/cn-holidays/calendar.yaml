@@ -1,0 +1,11 @@
+calendar_id: cn-holidays
+title: China Holidays
+description: Public holidays and notable dates for mainland China.
+locale: zh-CN
+timezone: Asia/Shanghai
+maintainers:
+  - data-team
+tags:
+  - china
+  - holidays
+update_frequency: yearly

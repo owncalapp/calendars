@@ -1,0 +1,13 @@
+calendar_id: cn-holidays
+events:
+  - id: cn-new-year-2026-01-01
+    title: 元旦
+    date: 2026-01-01
+    all_day: true
+    source: https://www.gov.cn/
+    tags:
+      - holiday
+      - china
+    status: tentative
+    notes: Official arrangement should be confirmed when the annual notice is published.
+    updated_at: 2026-02-19T00:00:00Z

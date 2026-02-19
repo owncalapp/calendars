@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://owncal.app/schemas/event.schema.json",
+  "title": "Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "all_day", "source"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "minLength": 3,
+      "maxLength": 128
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "all_day": {
+      "type": "boolean"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "start": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "end": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "type": "string",
+      "format": "uri",
+      "minLength": 1
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["confirmed", "tentative", "corrected"]
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "all_day": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": ["date"],
+        "not": {
+          "anyOf": [{ "required": ["start"] }, { "required": ["end"] }]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "all_day": {
+            "const": false
+          }
+        }
+      },
+      "then": {
+        "required": ["start", "end"],
+        "not": {
+          "required": ["date"]
+        }
+      }
+    }
+  ]
+}

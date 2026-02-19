@@ -1,0 +1,23 @@
+calendar_id: openai-model-releases
+title: OpenAI Model Releases
+description: Public release announcements for OpenAI models.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - ai
+  - openai
+  - model-release
+update_frequency: on-demand
+events:
+  - id: openai-gpt-4o-2024-05-13
+    title: OpenAI GPT-4o announced
+    date: 2024-05-13
+    all_day: true
+    source: https://openai.com/index/hello-gpt-4o/
+    tags:
+      - openai
+      - model-release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
