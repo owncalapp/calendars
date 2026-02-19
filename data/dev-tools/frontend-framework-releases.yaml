@@ -1,0 +1,613 @@
+calendar_id: frontend-framework-releases
+title: Frontend Framework Releases
+description: Major version releases of popular frontend frameworks including React, Vue, Angular, Svelte, Next.js, Nuxt, and Astro.
+locale: en-US
+timezone: UTC
+maintainers:
+  - frontend-team
+tags:
+  - frontend
+  - frameworks
+  - javascript
+  - typescript
+update_frequency: monthly
+events:
+  # React Major Releases
+  - id: react-16-0-0
+    title: React 16.0 released
+    date: 2017-09-26
+    all_day: true
+    source: https://github.com/facebook/react/releases/tag/v16.0.0
+    notes: Complete rewrite of React with Fiber architecture. Introduced error boundaries, portals, and improved server-side rendering.
+    tags:
+      - react
+      - major-release
+      - fiber
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: react-17-0-0
+    title: React 17.0 released
+    date: 2020-10-20
+    all_day: true
+    source: https://github.com/facebook/react/releases/tag/v17.0.0
+    notes: No new developer features. Gradual upgrades enabled, changes to event delegation, and cleaner removal of event listeners.
+    tags:
+      - react
+      - major-release
+      - gradual-upgrades
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: react-18-0-0
+    title: React 18.0 released
+    date: 2022-03-29
+    all_day: true
+    source: https://github.com/facebook/react/releases/tag/v18.0.0
+    notes: Concurrent React with automatic batching, new Suspense features, transitions, and new hooks (useId, useTransition, useDeferredValue).
+    tags:
+      - react
+      - major-release
+      - concurrent
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: react-19-0-0
+    title: React 19.0 released
+    date: 2024-12-05
+    all_day: true
+    source: https://github.com/facebook/react/releases/tag/v19.0.0
+    notes: Actions for handling data mutations, new hooks (useActionState, useOptimistic, useFormStatus), and Server Components support.
+    tags:
+      - react
+      - major-release
+      - actions
+      - server-components
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Vue 2.x Releases
+  - id: vue-2-0-0
+    title: Vue 2.0 released
+    date: 2016-09-30
+    all_day: true
+    source: https://github.com/vuejs/vue/releases/tag/v2.0.0
+    notes: Virtual DOM rewrite, improved performance, render functions, and server-side rendering support.
+    tags:
+      - vue
+      - major-release
+      - vdom
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: vue-2-7-0
+    title: Vue 2.7 released
+    date: 2022-07-01
+    all_day: true
+    source: https://github.com/vuejs/vue/releases/tag/v2.7.0
+    notes: Backported Vue 3 Composition API to Vue 2. Final feature release of Vue 2.
+    tags:
+      - vue
+      - composition-api
+      - backport
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: vue-2-eol
+    title: Vue 2 End of Life
+    date: 2023-12-31
+    all_day: true
+    source: https://blog.vuejs.org/posts/vue-2-eol
+    notes: Vue 2 reached End of Life. No longer receives updates or security patches.
+    tags:
+      - vue
+      - eol
+      - end-of-life
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Vue 3.x Releases
+  - id: vue-3-0-0
+    title: Vue 3.0 released
+    date: 2020-09-18
+    all_day: true
+    source: https://github.com/vuejs/core/releases/tag/v3.0.0
+    notes: Complete rewrite with Composition API, improved TypeScript support, better performance, and smaller bundle size.
+    tags:
+      - vue
+      - major-release
+      - composition-api
+      - typescript
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: vue-3-1-0
+    title: Vue 3.1 released
+    date: 2021-06-07
+    all_day: true
+    source: https://github.com/vuejs/core/releases/tag/v3.1.0
+    notes: Introduced script setup syntax (experimental), improved devtools integration, and performance optimizations.
+    tags:
+      - vue
+      - script-setup
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: vue-3-2-0
+    title: Vue 3.2 released
+    date: 2021-08-05
+    all_day: true
+    source: https://github.com/vuejs/core/releases/tag/v3.2.0
+    notes: Script setup marked stable, defineProps/defineEmits macros, and improved TypeScript support.
+    tags:
+      - vue
+      - script-setup
+      - macros
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: vue-3-3-0
+    title: Vue 3.3 released
+    date: 2023-05-11
+    all_day: true
+    source: https://github.com/vuejs/core/releases/tag/v3.3.0
+    notes: Improved TypeScript support with generic components, defineSlots macro, and reactive props destructure.
+    tags:
+      - vue
+      - typescript
+      - generics
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: vue-3-4-0
+    title: Vue 3.4 released
+    date: 2023-12-29
+    all_day: true
+    source: https://github.com/vuejs/core/releases/tag/v3.4.0
+    notes: Improved performance with better reactivity system, new defineModel macro, and hydration enhancements.
+    tags:
+      - vue
+      - performance
+      - defineModel
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: vue-3-5-0
+    title: Vue 3.5 released
+    date: 2024-09-03
+    all_day: true
+    source: https://github.com/vuejs/core/releases/tag/v3.5.0
+    notes: Reactive props destructure by default, improved SSR, and enhanced watch options.
+    tags:
+      - vue
+      - ssr
+      - reactivity
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Angular Major Releases
+  - id: angular-8-0-0
+    title: Angular 8.0 released
+    date: 2019-05-28
+    all_day: true
+    source: https://github.com/angular/angular/releases/tag/8.0.0
+    notes: Differential loading by default, dynamic imports for lazy routes, and web worker support.
+    tags:
+      - angular
+      - major-release
+      - differential-loading
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: angular-9-0-0
+    title: Angular 9.0 released
+    date: 2020-02-06
+    all_day: true
+    source: https://github.com/angular/angular/releases/tag/9.0.0
+    notes: Ivy renderer enabled by default, smaller bundle sizes, and improved debugging.
+    tags:
+      - angular
+      - major-release
+      - ivy
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: angular-10-0-0
+    title: Angular 10.0 released
+    date: 2020-06-24
+    all_day: true
+    source: https://github.com/angular/angular/releases/tag/10.0.0
+    notes: New date range picker, strict mode opt-in, and improved bundling.
+    tags:
+      - angular
+      - major-release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: angular-11-0-0
+    title: Angular 11.0 released
+    date: 2020-11-11
+    all_day: true
+    source: https://github.com/angular/angular/releases/tag/11.0.0
+    notes: Automatic inlining of fonts, improved reporting and logging, and updated language service.
+    tags:
+      - angular
+      - major-release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: angular-12-0-0
+    title: Angular 12.0 released
+    date: 2021-05-12
+    all_day: true
+    source: https://github.com/angular/angular/releases/tag/12.0.0
+    notes: Ivy for everyone, nullish coalescing in templates, and deprecated View Engine.
+    tags:
+      - angular
+      - major-release
+      - ivy
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: angular-13-0-0
+    title: Angular 13.0 released
+    date: 2021-11-03
+    all_day: true
+    source: https://github.com/angular/angular/releases/tag/13.0.0
+    notes: View Engine removed, RxJS 7.4, and persistent build cache by default.
+    tags:
+      - angular
+      - major-release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: angular-14-0-0
+    title: Angular 14.0 released
+    date: 2022-06-02
+    all_day: true
+    source: https://github.com/angular/angular/releases/tag/14.0.0
+    notes: Standalone components (developer preview), typed forms, and improved change detection.
+    tags:
+      - angular
+      - major-release
+      - standalone-components
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: angular-15-0-0
+    title: Angular 15.0 released
+    date: 2022-11-16
+    all_day: true
+    source: https://github.com/angular/angular/releases/tag/15.0.0
+    notes: Standalone components stable, directive composition API, and improved image loading.
+    tags:
+      - angular
+      - major-release
+      - standalone-components
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: angular-16-0-0
+    title: Angular 16.0 released
+    date: 2023-05-03
+    all_day: true
+    source: https://github.com/angular/angular/releases/tag/16.0.0
+    notes: Signals developer preview, hydration support, improved server-side rendering, and standalone schematics.
+    tags:
+      - angular
+      - major-release
+      - signals
+      - hydration
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: angular-17-0-0
+    title: Angular 17.0 released
+    date: 2023-11-08
+    all_day: true
+    source: https://github.com/angular/angular/releases/tag/17.0.0
+    notes: Built-in control flow, deferred views, Signals stable, and improved performance.
+    tags:
+      - angular
+      - major-release
+      - control-flow
+      - signals
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: angular-18-0-0
+    title: Angular 18.0 released
+    date: 2024-05-22
+    all_day: true
+    source: https://github.com/angular/angular/releases/tag/18.0.0
+    notes: Zoneless change detection, Signals fully supported, and new debugging tools.
+    tags:
+      - angular
+      - major-release
+      - zoneless
+      - signals
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: angular-19-0-0
+    title: Angular 19.0 released
+    date: 2024-11-19
+    all_day: true
+    source: https://github.com/angular/angular/releases/tag/19.0.0
+    notes: Standalone by default, incremental hydration, improved signals, and event replay.
+    tags:
+      - angular
+      - major-release
+      - standalone-default
+      - hydration
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Svelte Major Releases
+  - id: svelte-3-0-0
+    title: Svelte 3.0 released
+    date: 2019-04-22
+    all_day: true
+    source: https://github.com/sveltejs/svelte/releases/tag/v3.0.0
+    notes: Reactivity built into the compiler, no virtual DOM, and significantly smaller bundle sizes.
+    tags:
+      - svelte
+      - major-release
+      - compiler
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: svelte-4-0-0
+    title: Svelte 4.0 released
+    date: 2023-06-22
+    all_day: true
+    source: https://github.com/sveltejs/svelte/releases/tag/svelte%404.0.0
+    notes: Updated performance, smaller package size, and improved developer experience.
+    tags:
+      - svelte
+      - major-release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: svelte-5-0-0
+    title: Svelte 5.0 released
+    date: 2024-10-19
+    all_day: true
+    source: https://github.com/sveltejs/svelte/releases/tag/svelte%405.0.0
+    notes: Runes for explicit reactivity, improved performance, and better TypeScript support.
+    tags:
+      - svelte
+      - major-release
+      - runes
+      - reactivity
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Next.js Major Releases
+  - id: nextjs-9-0-0
+    title: Next.js 9.0 released
+    date: 2019-07-08
+    all_day: true
+    source: https://github.com/vercel/next.js/releases/tag/v9.0.0
+    notes: API routes, dynamic routing, and automatic static optimization.
+    tags:
+      - nextjs
+      - major-release
+      - api-routes
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: nextjs-10-0-0
+    title: Next.js 10.0 released
+    date: 2020-10-27
+    all_day: true
+    source: https://github.com/vercel/next.js/releases/tag/v10.0.0
+    notes: Image component, internationalized routing, and automatic font optimization.
+    tags:
+      - nextjs
+      - major-release
+      - image-optimization
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: nextjs-11-0-0
+    title: Next.js 11.0 released
+    date: 2021-06-15
+    all_day: true
+    source: https://github.com/vercel/next.js/releases/tag/v11.0.0
+    notes: Conformance, script optimization, and improved webpack performance.
+    tags:
+      - nextjs
+      - major-release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: nextjs-12-0-0
+    title: Next.js 12.0 released
+    date: 2021-10-26
+    all_day: true
+    source: https://github.com/vercel/next.js/releases/tag/v12.0.0
+    notes: Rust compiler (SWC), middleware beta, React 18 support, and AVIF support.
+    tags:
+      - nextjs
+      - major-release
+      - swc
+      - rust
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: nextjs-13-0-0
+    title: Next.js 13.0 released
+    date: 2022-10-25
+    all_day: true
+    source: https://github.com/vercel/next.js/releases/tag/v13.0.0
+    notes: App Router beta, React Server Components, streaming, and Turbopack alpha.
+    tags:
+      - nextjs
+      - major-release
+      - app-router
+      - server-components
+      - turbopack
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: nextjs-14-0-0
+    title: Next.js 14.0 released
+    date: 2023-10-26
+    all_day: true
+    source: https://github.com/vercel/next.js/releases/tag/v14.0.0
+    notes: Turbopack stable, improved caching, and server actions.
+    tags:
+      - nextjs
+      - major-release
+      - turbopack
+      - server-actions
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: nextjs-15-0-0
+    title: Next.js 15.0 released
+    date: 2024-10-21
+    all_day: true
+    source: https://github.com/vercel/next.js/releases/tag/v15.0.0
+    notes: React 19 support, improved caching behavior, and partial prerendering.
+    tags:
+      - nextjs
+      - major-release
+      - react-19
+      - ppr
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Nuxt Major Releases
+  - id: nuxt-2-0-0
+    title: Nuxt 2.0 released
+    date: 2018-09-21
+    all_day: true
+    source: https://github.com/nuxt/nuxt/releases/tag/v2.0.0
+    notes: Webpack 4, Vue 2.5, and modern mode support.
+    tags:
+      - nuxt
+      - major-release
+      - webpack
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: nuxt-2-bridge
+    title: Nuxt Bridge released
+    date: 2021-10-12
+    all_day: true
+    source: https://github.com/nuxt/nuxt/releases/tag/v2.16.0
+    notes: Bridge to help migrate Nuxt 2 projects to Nuxt 3 with Composition API and Nitro support.
+    tags:
+      - nuxt
+      - bridge
+      - migration
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: nuxt-3-0-0
+    title: Nuxt 3.0 released
+    date: 2022-11-16
+    all_day: true
+    source: https://github.com/nuxt/nuxt/releases/tag/v3.0.0
+    notes: Complete rewrite with Vue 3, Nitro engine, server API routes, and TypeScript by default.
+    tags:
+      - nuxt
+      - major-release
+      - nitro
+      - vue-3
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: nuxt-3-4-0
+    title: Nuxt 3.4 released
+    date: 2023-03-14
+    all_day: true
+    source: https://github.com/nuxt/nuxt/releases/tag/v3.4.0
+    notes: Layer improvements, devtools integration, and performance enhancements.
+    tags:
+      - nuxt
+      - layers
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: nuxt-4-0-0
+    title: Nuxt 4.0 released
+    date: 2024-07-30
+    all_day: true
+    source: https://github.com/nuxt/nuxt/releases/tag/v4.0.0
+    notes: New defaults, improved performance, and better compatibility with modern tools.
+    tags:
+      - nuxt
+      - major-release
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Astro Major Releases
+  - id: astro-1-0-0
+    title: Astro 1.0 released
+    date: 2022-08-09
+    all_day: true
+    source: https://github.com/withastro/astro/releases/tag/astro%401.0.0
+    notes: Islands architecture, partial hydration, and framework-agnostic components.
+    tags:
+      - astro
+      - major-release
+      - islands
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: astro-2-0-0
+    title: Astro 2.0 released
+    date: 2023-01-24
+    all_day: true
+    source: https://github.com/withastro/astro/releases/tag/astro%402.0.0
+    notes: Content collections, hybrid rendering, and improved error overlay.
+    tags:
+      - astro
+      - major-release
+      - content-collections
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: astro-3-0-0
+    title: Astro 3.0 released
+    date: 2023-08-30
+    all_day: true
+    source: https://github.com/withastro/astro/releases/tag/astro%403.0.0
+    notes: View Transitions API support, image optimization, and faster builds.
+    tags:
+      - astro
+      - major-release
+      - view-transitions
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: astro-4-0-0
+    title: Astro 4.0 released
+    date: 2023-12-05
+    all_day: true
+    source: https://github.com/withastro/astro/releases/tag/astro%404.0.0
+    notes: Dev toolbar, internationalization, and incremental static regeneration.
+    tags:
+      - astro
+      - major-release
+      - i18n
+      - toolbar
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: astro-5-0-0
+    title: Astro 5.0 released
+    date: 2024-12-17
+    all_day: true
+    source: https://github.com/withastro/astro/releases/tag/astro%405.0.0
+    notes: Content Layer API, server islands, and improved performance.
+    tags:
+      - astro
+      - major-release
+      - content-layer
+      - server-islands
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
