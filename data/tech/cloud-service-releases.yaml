@@ -1,0 +1,495 @@
+calendar_id: cloud-service-releases
+title: Cloud Provider Service Releases
+description: Major service releases and launches from AWS, Azure, and Google Cloud Platform.
+locale: en-US
+timezone: UTC
+maintainers:
+  - data-team
+tags:
+  - cloud
+  - aws
+  - azure
+  - gcp
+  - service-release
+update_frequency: on-demand
+events:
+  # AWS Service Releases
+  - id: aws-ec2-launch-2006-08-25
+    title: AWS EC2 General Availability
+    date: 2006-08-25
+    all_day: true
+    source: https://aws.amazon.com/about-aws/whats-new/2006/08/24/announcing-amazon-elastic-compute-cloud-amazon-ec2---beta/
+    notes: Amazon Elastic Compute Cloud (EC2) launched as a web service that provides resizable compute capacity in the cloud.
+    tags:
+      - aws
+      - ec2
+      - compute
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: aws-s3-launch-2006-03-14
+    title: AWS S3 General Availability
+    date: 2006-03-14
+    all_day: true
+    source: https://aws.amazon.com/about-aws/whats-new/2006/03/14/amazon-s3-simple-storage-service/
+    notes: Amazon Simple Storage Service (S3) launched offering scalable object storage for data backup, archiving, and analytics.
+    tags:
+      - aws
+      - s3
+      - storage
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: aws-rds-launch-2009-10-26
+    title: AWS RDS General Availability
+    date: 2009-10-26
+    all_day: true
+    source: https://aws.amazon.com/about-aws/whats-new/2009/10/26/amazon-relational-database-service-amazon-rds/
+    notes: Amazon Relational Database Service (RDS) launched, making it easier to set up, operate, and scale relational databases in the cloud.
+    tags:
+      - aws
+      - rds
+      - database
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: aws-vpc-launch-2009-08-26
+    title: AWS VPC General Availability
+    date: 2009-08-26
+    all_day: true
+    source: https://aws.amazon.com/about-aws/whats-new/2009/08/26/amazon-virtual-private-cloud/
+    notes: Amazon Virtual Private Cloud (VPC) launched, allowing users to provision a logically isolated section of the AWS Cloud.
+    tags:
+      - aws
+      - vpc
+      - networking
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: aws-lambda-launch-2014-11-13
+    title: AWS Lambda Preview Launch
+    date: 2014-11-13
+    all_day: true
+    source: https://aws.amazon.com/blogs/aws/aws-lambda-a-serverless-computing-platform/
+    notes: AWS Lambda announced at reInvent 2014 as a serverless compute service that runs code in response to events.
+    tags:
+      - aws
+      - lambda
+      - serverless
+      - preview
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: aws-lambda-ga-2015-04-09
+    title: AWS Lambda General Availability
+    date: 2015-04-09
+    all_day: true
+    source: https://aws.amazon.com/about-aws/whats-new/2015/04/09/aws-lambda-generally-available/
+    notes: AWS Lambda reached general availability with production-ready serverless computing capabilities.
+    tags:
+      - aws
+      - lambda
+      - serverless
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: aws-api-gateway-launch-2015-07-09
+    title: AWS API Gateway General Availability
+    date: 2015-07-09
+    all_day: true
+    source: https://aws.amazon.com/about-aws/whats-new/2015/07/09/introducing-amazon-api-gateway/
+    notes: Amazon API Gateway launched as a fully managed service for creating, publishing, and securing APIs at any scale.
+    tags:
+      - aws
+      - api-gateway
+      - serverless
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: aws-sagemaker-launch-2017-11-29
+    title: AWS SageMaker General Availability
+    date: 2017-11-29
+    all_day: true
+    source: https://aws.amazon.com/blogs/aws/sagemaker/
+    notes: Amazon SageMaker launched at reInvent 2017 as a fully managed machine learning service for building, training, and deploying ML models.
+    tags:
+      - aws
+      - sagemaker
+      - machine-learning
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: aws-eks-launch-2018-06-05
+    title: AWS EKS General Availability
+    date: 2018-06-05
+    all_day: true
+    source: https://aws.amazon.com/about-aws/whats-new/2018/06/amazon-eks-now-generally-available/
+    notes: Amazon Elastic Kubernetes Service (EKS) reached general availability for running Kubernetes on AWS.
+    tags:
+      - aws
+      - eks
+      - kubernetes
+      - containers
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: aws-fargate-launch-2017-11-30
+    title: AWS Fargate Preview Launch
+    date: 2017-11-30
+    all_day: true
+    source: https://aws.amazon.com/blogs/aws/aws-fargate/
+    notes: AWS Fargate announced at reInvent 2017 as a serverless compute engine for containers that works with ECS and EKS.
+    tags:
+      - aws
+      - fargate
+      - containers
+      - serverless
+      - preview
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: aws-fargate-ga-2018-04-03
+    title: AWS Fargate General Availability
+    date: 2018-04-03
+    all_day: true
+    source: https://aws.amazon.com/about-aws/whats-new/2018/04/aws-fargate-now-generally-available/
+    notes: AWS Fargate reached general availability for Amazon ECS, with EKS support added later.
+    tags:
+      - aws
+      - fargate
+      - containers
+      - serverless
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: aws-bedrock-launch-2023-04-13
+    title: AWS Bedrock General Availability
+    date: 2023-04-13
+    all_day: true
+    source: https://aws.amazon.com/blogs/aws/amazon-bedrock-is-now-generally-available-build-and-scale-generative-ai-applications-with-foundation-models/
+    notes: Amazon Bedrock reached general availability, offering a managed service for building generative AI applications with foundation models.
+    tags:
+      - aws
+      - bedrock
+      - ai
+      - foundation-models
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: aws-trainium-launch-2020-12-01
+    title: AWS Trainium Announcement
+    date: 2020-12-01
+    all_day: true
+    source: https://aws.amazon.com/blogs/aws/aws-train2-the-highest-performance-lowest-cost-machine-learning-training-in-the-cloud/
+    notes: AWS Trainium announced at reInvent 2020 as a high-performance machine learning training chip designed for AWS.
+    tags:
+      - aws
+      - trainium
+      - inferentia
+      - ml-hardware
+      - announcement
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Google Cloud Service Releases
+  - id: gcp-app-engine-launch-2008-04-07
+    title: Google App Engine Preview Launch
+    date: 2008-04-07
+    all_day: true
+    source: https://cloud.google.com/blog/products/gcp/gaes-10th-birthday-a-decade-of-innovation
+    notes: Google App Engine launched as a platform-as-a-service for building scalable web applications and mobile backends.
+    tags:
+      - gcp
+      - app-engine
+      - paas
+      - preview
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: gcp-compute-engine-launch-2012-06-28
+    title: Google Compute Engine Preview Launch
+    date: 2012-06-28
+    all_day: true
+    source: https://cloud.google.com/blog/products/compute/introducing-google-compute-engine
+    notes: Google Compute Engine (GCE) announced at Google I/O 2012, providing scalable virtual machines in the cloud.
+    tags:
+      - gcp
+      - compute-engine
+      - compute
+      - preview
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: gcp-compute-engine-ga-2013-05-28
+    title: Google Compute Engine General Availability
+    date: 2013-05-28
+    all_day: true
+    source: https://cloud.google.com/blog/products/compute/google-compute-engine-is-now-generally-available
+    notes: Google Compute Engine reached general availability with expanded features and regional support.
+    tags:
+      - gcp
+      - compute-engine
+      - compute
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: gcp-bigquery-launch-2012-05-18
+    title: Google BigQuery General Availability
+    date: 2012-05-18
+    all_day: true
+    source: https://cloud.google.com/blog/products/bigquery/announcing-bigquery-google-clouds-interactive-big-data-service
+    notes: Google BigQuery launched as a fully managed, serverless data warehouse for scalable analytics.
+    tags:
+      - gcp
+      - bigquery
+      - analytics
+      - data-warehouse
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: gcp-cloud-storage-launch-2010-05-19
+    title: Google Cloud Storage Launch
+    date: 2010-05-19
+    all_day: true
+    source: https://cloud.google.com/blog/products/storage-data-transfer/google-cloud-storage-history
+    notes: Google Cloud Storage launched as an enterprise object storage service for developers.
+    tags:
+      - gcp
+      - cloud-storage
+      - storage
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: gcp-kubernetes-engine-launch-2014-06-10
+    title: Google Kubernetes Engine Announcement
+    date: 2014-06-10
+    all_day: true
+    source: https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-a-short-history
+    notes: Google open-sourced Kubernetes, the container orchestration platform that would later power GKE.
+    tags:
+      - gcp
+      - kubernetes
+      - gke
+      - containers
+      - open-source
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: gcp-cloud-run-launch-2019-04-09
+    title: Google Cloud Run General Availability
+    date: 2019-04-09
+    all_day: true
+    source: https://cloud.google.com/blog/products/serverless/cloud-run-is-now-generally-available
+    notes: Google Cloud Run reached general availability, allowing developers to run containers serverlessly.
+    tags:
+      - gcp
+      - cloud-run
+      - serverless
+      - containers
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: gcp-vertex-ai-launch-2021-05-18
+    title: Google Vertex AI General Availability
+    date: 2021-05-18
+    all_day: true
+    source: https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-ga-release
+    notes: Google Vertex AI launched as a unified AI platform for building, deploying, and scaling ML models.
+    tags:
+      - gcp
+      - vertex-ai
+      - machine-learning
+      - ai-platform
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: gcp-cloud-functions-launch-2017-03-09
+    title: Google Cloud Functions General Availability
+    date: 2017-03-09
+    all_day: true
+    source: https://cloud.google.com/blog/products/gcp/google-cloud-functions-now-generally-available
+    notes: Google Cloud Functions reached general availability as an event-driven serverless compute platform.
+    tags:
+      - gcp
+      - cloud-functions
+      - serverless
+      - faas
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: gcp-pubsub-launch-2015-03-24
+    title: Google Cloud Pub/Sub General Availability
+    date: 2015-03-24
+    all_day: true
+    source: https://cloud.google.com/blog/products/gcp/google-cloud-pubsub-now-generally-available
+    notes: Google Cloud Pub/Sub reached general availability as a messaging service for building event-driven systems.
+    tags:
+      - gcp
+      - pubsub
+      - messaging
+      - event-driven
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  # Azure Service Releases
+  - id: azure-launch-2010-02-01
+    title: Microsoft Azure General Availability
+    date: 2010-02-01
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/azure-is-now-generally-available/
+    notes: Windows Azure (now Microsoft Azure) reached general availability, offering cloud computing services.
+    tags:
+      - azure
+      - cloud-platform
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: azure-vm-launch-2012-06-07
+    title: Azure Virtual Machines Preview Launch
+    date: 2012-06-07
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/announcing-new-windows-azure-services-to-deliver-
+    notes: Azure Virtual Machines announced, providing infrastructure-as-a-service capabilities.
+    tags:
+      - azure
+      - virtual-machines
+      - compute
+      - preview
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: azure-sql-database-launch-2010-02-01
+    title: Azure SQL Database General Availability
+    date: 2010-02-01
+    all_day: true
+    source: https://azure.microsoft.com/en-us/services/sql-database/
+    notes: Azure SQL Database (formerly SQL Azure) launched as a managed relational database service.
+    tags:
+      - azure
+      - sql-database
+      - database
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: azure-functions-launch-2016-03-31
+    title: Azure Functions General Availability
+    date: 2016-03-31
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/azure-functions-is-now-generally-available/
+    notes: Azure Functions reached general availability as an event-driven serverless compute service.
+    tags:
+      - azure
+      - functions
+      - serverless
+      - faas
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: azure-kubernetes-service-launch-2018-06-13
+    title: Azure Kubernetes Service General Availability
+    date: 2018-06-13
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-azure-kubernetes-service-aks/
+    notes: Azure Kubernetes Service (AKS) reached general availability for managed Kubernetes clusters.
+    tags:
+      - azure
+      - aks
+      - kubernetes
+      - containers
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: azure-openai-service-launch-2022-11-01
+    title: Azure OpenAI Service General Availability
+    date: 2022-11-01
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/general-availability-of-azure-openai-service-expands-access-to-large-advanced-ai-models-with-added-enterprise-benefits/
+    notes: Azure OpenAI Service reached general availability, providing access to OpenAI's models with Azure's enterprise capabilities.
+    tags:
+      - azure
+      - openai
+      - ai
+      - foundation-models
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: azure-cognitive-services-launch-2016-12-13
+    title: Azure Cognitive Services General Availability
+    date: 2016-12-13
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/microsoft-azure-cognitive-services-now-generally-available/
+    notes: Azure Cognitive Services reached general availability, offering pre-built AI APIs for vision, speech, language, and decision-making.
+    tags:
+      - azure
+      - cognitive-services
+      - ai
+      - apis
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: azure-machine-learning-launch-2019-05-02
+    title: Azure Machine Learning General Availability
+    date: 2019-05-02
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/azure-machine-learning-service-now-generally-available/
+    notes: Azure Machine Learning service reached general availability as an enterprise-grade ML platform.
+    tags:
+      - azure
+      - machine-learning
+      - ml-platform
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: azure-container-instances-launch-2017-07-26
+    title: Azure Container Instances General Availability
+    date: 2017-07-26
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/azure-container-instances-now-generally-available/
+    notes: Azure Container Instances reached general availability for running containers without managing servers.
+    tags:
+      - azure
+      - container-instances
+      - containers
+      - serverless
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
+
+  - id: azure-cosmos-db-launch-2017-05-10
+    title: Azure Cosmos DB General Availability
+    date: 2017-05-10
+    all_day: true
+    source: https://azure.microsoft.com/en-us/blog/azure-cosmos-db-the-future-of-planet-scale-database-services-is-here/
+    notes: Azure Cosmos DB reached general availability as a globally distributed, multi-model database service.
+    tags:
+      - azure
+      - cosmos-db
+      - database
+      - nosql
+      - ga
+    status: confirmed
+    updated_at: 2026-02-19T00:00:00Z
