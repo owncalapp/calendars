@@ -1,0 +1,92 @@
+calendar_id: cn-holidays
+events:
+  - id: cn-new-year-2024
+    title: 元旦
+    date: '2024-01-01'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - new-year
+    status: confirmed
+    notes: 2023年12月30日至2024年1月1日放假3天，1月2日上班
+    updated_at: '2024-10-25T00:00:00Z'
+
+  - id: cn-spring-festival-2024
+    title: 春节
+    date: '2024-02-10'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - spring-festival
+    status: confirmed
+    notes: 2月10日至17日放假8天，2月4日（周日）、18日（周日）上班
+    updated_at: '2024-10-25T00:00:00Z'
+
+  - id: cn-qingming-2024
+    title: 清明节
+    date: '2024-04-04'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - qingming
+    status: confirmed
+    notes: 4月4日至6日放假3天，4月7日（周日）上班
+    updated_at: '2024-10-25T00:00:00Z'
+
+  - id: cn-labor-day-2024
+    title: 劳动节
+    date: '2024-05-01'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - labor-day
+    status: confirmed
+    notes: 5月1日至5日放假5天，4月28日（周日）、5月11日（周六）上班
+    updated_at: '2024-10-25T00:00:00Z'
+
+  - id: cn-dragon-boat-2024
+    title: 端午节
+    date: '2024-06-10'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - dragon-boat
+    status: confirmed
+    notes: 6月10日放假1天，与周末连休
+    updated_at: '2024-10-25T00:00:00Z'
+
+  - id: cn-mid-autumn-2024
+    title: 中秋节
+    date: '2024-09-15'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - mid-autumn
+    status: confirmed
+    notes: 9月15日至17日放假3天，9月14日（周六）上班
+    updated_at: '2024-10-25T00:00:00Z'
+
+  - id: cn-national-day-2024
+    title: 国庆节
+    date: '2024-10-01'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - national-day
+    status: confirmed
+    notes: 10月1日至7日放假7天，9月29日（周日）、10月12日（周六）上班
+    updated_at: '2024-10-25T00:00:00Z'
