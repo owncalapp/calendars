@@ -1,0 +1,181 @@
+calendar_id: cn-holidays
+year: 2024
+events:
+  # 元旦
+  - id: cn-new-year-2024
+    title: 元旦
+    date: 2024-01-01
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - new-year
+    type: 法定节假日
+    notes: 2023年12月30日至2024年1月1日放假3天，1月2日上班
+
+  # 春节
+  - id: cn-spring-festival-2024
+    title: 春节
+    date: 2024-02-10
+    end_date: 2024-02-17
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - spring-festival
+    type: 法定节假日
+    notes: 2月10日至17日放假8天，2月4日（周日）、18日（周日）上班
+
+  # 清明节
+  - id: cn-qingming-2024
+    title: 清明节
+    date: 2024-04-04
+    end_date: 2024-04-06
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - qingming
+    type: 法定节假日
+    notes: 4月4日至6日放假3天，4月7日（周日）上班
+
+  # 劳动节
+  - id: cn-labor-day-2024
+    title: 劳动节
+    date: 2024-05-01
+    end_date: 2024-05-05
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - labor-day
+    type: 法定节假日
+    notes: 5月1日至5日放假5天，4月28日（周日）、5月11日（周六）上班
+
+  # 端午节
+  - id: cn-dragon-boat-2024
+    title: 端午节
+    date: 2024-06-10
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - dragon-boat
+    type: 法定节假日
+    notes: 6月10日放假1天，与周末连休
+
+  # 中秋节
+  - id: cn-mid-autumn-2024
+    title: 中秋节
+    date: 2024-09-15
+    end_date: 2024-09-17
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - mid-autumn
+    type: 法定节假日
+    notes: 9月15日至17日放假3天，9月14日（周六）上班
+
+  # 国庆节
+  - id: cn-national-day-2024
+    title: 国庆节
+    date: 2024-10-01
+    end_date: 2024-10-07
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+    tags:
+      - holiday
+      - china
+      - national-day
+    type: 法定节假日
+    notes: 10月1日至7日放假7天，9月29日（周日）、10月12日（周六）上班
+
+  # 调休上班日
+  - id: cn-workday-2024-02-04
+    title: 调休上班
+    date: 2024-02-04
+    all_day: true
+    tags:
+      - workday
+      - china
+    type: 调休上班
+    notes: 春节调休，补2月15日（周四）的班
+
+  - id: cn-workday-2024-02-18
+    title: 调休上班
+    date: 2024-02-18
+    all_day: true
+    tags:
+      - workday
+      - china
+    type: 调休上班
+    notes: 春节调休，补2月16日（周五）的班
+
+  - id: cn-workday-2024-04-07
+    title: 调休上班
+    date: 2024-04-07
+    all_day: true
+    tags:
+      - workday
+      - china
+    type: 调休上班
+    notes: 清明节调休，补4月5日（周五）的班
+
+  - id: cn-workday-2024-04-28
+    title: 调休上班
+    date: 2024-04-28
+    all_day: true
+    tags:
+      - workday
+      - china
+    type: 调休上班
+    notes: 劳动节调休，补5月2日（周四）的班
+
+  - id: cn-workday-2024-05-11
+    title: 调休上班
+    date: 2024-05-11
+    all_day: true
+    tags:
+      - workday
+      - china
+    type: 调休上班
+    notes: 劳动节调休，补5月3日（周五）的班
+
+  - id: cn-workday-2024-09-14
+    title: 调休上班
+    date: 2024-09-14
+    all_day: true
+    tags:
+      - workday
+      - china
+    type: 调休上班
+    notes: 中秋节调休，补9月16日（周一）的班
+
+  - id: cn-workday-2024-09-29
+    title: 调休上班
+    date: 2024-09-29
+    all_day: true
+    tags:
+      - workday
+      - china
+    type: 调休上班
+    notes: 国庆节调休，补10月4日（周五）的班
+
+  - id: cn-workday-2024-10-12
+    title: 调休上班
+    date: 2024-10-12
+    all_day: true
+    tags:
+      - workday
+      - china
+    type: 调休上班
+    notes: 国庆节调休，补10月7日（周一）的班
+
+updated_at: 2024-10-25T00:00:00Z

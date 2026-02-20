@@ -9,3 +9,18 @@ tags:
   - china
   - holidays
 update_frequency: yearly
+
+# 按年份分文件存储
+years:
+  - file: 2024.yaml
+    year: 2024
+    status: confirmed
+    source: https://www.gov.cn/zhengce/content/202310/content_6914844.htm
+  - file: 2025.yaml
+    year: 2025
+    status: confirmed
+    source: https://www.gov.cn/zhengce/content/202411/content_6987806.htm
+  - file: 2026.yaml
+    year: 2026
+    status: tentative
+    note: 基于常规模式预测，待国务院正式发布
