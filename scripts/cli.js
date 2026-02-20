@@ -540,7 +540,9 @@ function updateEvent(args) {
     return;
   }
 
-  sourcePayload.events = sourceEvents.filter((e) => e.id !== eventId);
+  sourcePayload.events = sortEvents(
+    sourceEvents.filter((e) => e.id !== eventId),
+  );
   writeYaml(found.filePath, sourcePayload);
 
   let targetPayload;
@@ -567,7 +569,9 @@ function deleteEvent(args) {
   if (!found) die(`Event not found: ${eventId}`);
 
   const payload = readYaml(found.filePath);
-  payload.events = (payload.events || []).filter((e) => e.id !== eventId);
+  payload.events = sortEvents(
+    (payload.events || []).filter((e) => e.id !== eventId),
+  );
   writeYaml(found.filePath, payload);
   console.log(`Deleted event from ${path.relative(ROOT, found.filePath)}`);
 }
@@ -625,8 +629,238 @@ function sortEventsCommand(args) {
   );
 }
 
+function listSplitCalendarDirs() {
+  if (!fs.existsSync(DATA_DIR)) return [];
+  const result = [];
+
+  function walk(dirPath) {
+    const entries = fs.readdirSync(dirPath, { withFileTypes: true });
+    const hasCalendarYaml = entries.some(
+      (entry) => entry.isFile() && entry.name === "calendar.yaml",
+    );
+    if (hasCalendarYaml) {
+      result.push(dirPath);
+      return;
+    }
+    for (const entry of entries) {
+      if (!entry.isDirectory()) continue;
+      walk(path.join(dirPath, entry.name));
+    }
+  }
+
+  walk(DATA_DIR);
+  return result.sort();
+}
+
+function listFlatCalendarFilesForValidate() {
+  if (!fs.existsSync(DATA_DIR)) return [];
+  const result = [];
+
+  function walk(dirPath) {
+    const entries = fs.readdirSync(dirPath, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dirPath, entry.name);
+      if (entry.isDirectory()) {
+        walk(fullPath);
+        continue;
+      }
+      if (!entry.isFile()) continue;
+      if (!/\.ya?ml$/.test(entry.name)) continue;
+      if (entry.name === "calendar.yaml") continue;
+      if (entry.name === "taxonomy.yaml") continue;
+      if (/^\d{4}\.ya?ml$/.test(entry.name)) continue;
+      result.push(fullPath);
+    }
+  }
+
+  walk(DATA_DIR);
+  return result.sort();
+}
+
 function runValidate() {
-  require("./validate.js");
+  const { validateCalendar, validateEvent, errorsText } =
+    loadSchemaValidators();
+  const seenEventIds = new Map();
+  const seenCalendarIds = new Map();
+  let hasErrors = false;
+
+  function fail(message) {
+    console.error(message);
+    hasErrors = true;
+  }
+
+  const splitDirs = listSplitCalendarDirs();
+  const flatFiles = listFlatCalendarFilesForValidate();
+  if (splitDirs.length === 0 && flatFiles.length === 0) {
+    fail("No calendars found under data/.");
+  }
+
+  for (const dirPath of splitDirs) {
+    const dirName = path.basename(dirPath);
+    const files = fs.readdirSync(dirPath).sort();
+    const metaPath = path.join(dirPath, "calendar.yaml");
+
+    if (!fs.existsSync(metaPath)) {
+      fail(`Missing metadata file: ${path.relative(ROOT, metaPath)}`);
+      continue;
+    }
+
+    const meta = readYaml(metaPath);
+    if (!validateCalendar(meta)) {
+      fail(
+        `${path.relative(ROOT, metaPath)} failed schema validation: ` +
+          errorsText(validateCalendar.errors),
+      );
+      continue;
+    }
+    if (Array.isArray(meta.events)) {
+      fail(
+        `${path.relative(ROOT, metaPath)} must not include events in split mode.`,
+      );
+      continue;
+    }
+
+    if (meta.calendar_id !== dirName) {
+      fail(
+        `${path.relative(
+          ROOT,
+          metaPath,
+        )} calendar_id must match directory name "${dirName}".`,
+      );
+    }
+    if (seenCalendarIds.has(meta.calendar_id)) {
+      fail(
+        `Duplicate calendar_id "${meta.calendar_id}" found in ${path.relative(
+          ROOT,
+          metaPath,
+        )} and ${seenCalendarIds.get(meta.calendar_id)}.`,
+      );
+    } else {
+      seenCalendarIds.set(meta.calendar_id, path.relative(ROOT, metaPath));
+    }
+
+    for (const file of files) {
+      if (file === "calendar.yaml" || file === "calendar.yml") continue;
+      if (!/\.ya?ml$/.test(file)) continue;
+
+      const dataPath = path.join(dirPath, file);
+      const payload = readYaml(dataPath);
+      if (
+        !payload ||
+        typeof payload !== "object" ||
+        Array.isArray(payload) ||
+        typeof payload.calendar_id !== "string" ||
+        !Array.isArray(payload.events)
+      ) {
+        fail(
+          `${path.relative(
+            ROOT,
+            dataPath,
+          )} must be an object with calendar_id and events array.`,
+        );
+        continue;
+      }
+
+      if (payload.calendar_id !== meta.calendar_id) {
+        fail(
+          `${path.relative(
+            ROOT,
+            dataPath,
+          )} calendar_id does not match ${path.relative(ROOT, metaPath)}.`,
+        );
+      }
+
+      for (const event of payload.events) {
+        if (!validateEvent(event)) {
+          fail(
+            `${path.relative(
+              ROOT,
+              dataPath,
+            )} has invalid event: ${errorsText(validateEvent.errors)}`,
+          );
+          continue;
+        }
+        if (seenEventIds.has(event.id)) {
+          fail(
+            `Duplicate event id "${event.id}" found in ${path.relative(
+              ROOT,
+              dataPath,
+            )} and ${seenEventIds.get(event.id)}.`,
+          );
+        } else {
+          seenEventIds.set(event.id, path.relative(ROOT, dataPath));
+        }
+      }
+    }
+  }
+
+  for (const flatPath of flatFiles) {
+    const payload = readYaml(flatPath);
+    if (!validateCalendar(payload)) {
+      fail(
+        `${path.relative(
+          ROOT,
+          flatPath,
+        )} failed schema validation: ${errorsText(validateCalendar.errors)}`,
+      );
+      continue;
+    }
+    if (!Array.isArray(payload.events)) {
+      fail(
+        `${path.relative(ROOT, flatPath)} must include events array in flat mode.`,
+      );
+      continue;
+    }
+
+    const expectedId = path.basename(flatPath).replace(/\.ya?ml$/, "");
+    if (payload.calendar_id !== expectedId) {
+      fail(
+        `${path.relative(
+          ROOT,
+          flatPath,
+        )} calendar_id must match filename "${expectedId}".`,
+      );
+    }
+
+    if (seenCalendarIds.has(payload.calendar_id)) {
+      fail(
+        `Duplicate calendar_id "${payload.calendar_id}" found in ${path.relative(
+          ROOT,
+          flatPath,
+        )} and ${seenCalendarIds.get(payload.calendar_id)}.`,
+      );
+      continue;
+    } else {
+      seenCalendarIds.set(payload.calendar_id, path.relative(ROOT, flatPath));
+    }
+
+    for (const event of payload.events) {
+      if (!validateEvent(event)) {
+        fail(
+          `${path.relative(
+            ROOT,
+            flatPath,
+          )} has invalid event: ${errorsText(validateEvent.errors)}`,
+        );
+        continue;
+      }
+      if (seenEventIds.has(event.id)) {
+        fail(
+          `Duplicate event id "${event.id}" found in ${path.relative(
+            ROOT,
+            flatPath,
+          )} and ${seenEventIds.get(event.id)}.`,
+        );
+      } else {
+        seenEventIds.set(event.id, path.relative(ROOT, flatPath));
+      }
+    }
+  }
+
+  if (hasErrors) {
+    process.exit(1);
+  }
+  console.log("Validation passed.");
 }
 
 function printHelp() {

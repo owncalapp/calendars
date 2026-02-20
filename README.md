@@ -10,7 +10,6 @@ This repository stores human-maintained calendar source data.
 - `data/**/<calendar-id>/*.yaml`: event files (split mode, excluding `calendar.yaml`)
 - `docs/`: contribution and style guides
 - `scripts/cli.js`: calendar/event CLI and validation entry
-- `scripts/validate.js`: schema and consistency checks (invoked by CLI)
 
 ## Quick Start
 
