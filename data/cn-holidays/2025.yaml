@@ -1,0 +1,80 @@
+calendar_id: cn-holidays
+events:
+  - id: cn-new-year-2025
+    title: 元旦
+    date: '2025-01-01'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202411/content_6987806.htm
+    tags:
+      - holiday
+      - china
+      - new-year
+    status: confirmed
+    notes: 1月1日放假1天，不调休
+    updated_at: '2024-11-12T00:00:00Z'
+
+  - id: cn-spring-festival-2025
+    title: 春节
+    date: '2025-01-28'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202411/content_6987806.htm
+    tags:
+      - holiday
+      - china
+      - spring-festival
+    status: confirmed
+    notes: 1月28日至2月4日放假8天，1月26日（周日）、2月8日（周六）上班
+    updated_at: '2024-11-12T00:00:00Z'
+
+  - id: cn-qingming-2025
+    title: 清明节
+    date: '2025-04-04'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202411/content_6987806.htm
+    tags:
+      - holiday
+      - china
+      - qingming
+    status: confirmed
+    notes: 4月4日至6日放假3天，不调休
+    updated_at: '2024-11-12T00:00:00Z'
+
+  - id: cn-labor-day-2025
+    title: 劳动节
+    date: '2025-05-01'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202411/content_6987806.htm
+    tags:
+      - holiday
+      - china
+      - labor-day
+    status: confirmed
+    notes: 5月1日至5日放假5天，4月27日（周日）上班
+    updated_at: '2024-11-12T00:00:00Z'
+
+  - id: cn-dragon-boat-2025
+    title: 端午节
+    date: '2025-05-31'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202411/content_6987806.htm
+    tags:
+      - holiday
+      - china
+      - dragon-boat
+    status: confirmed
+    notes: 5月31日至6月2日放假3天，不调休
+    updated_at: '2024-11-12T00:00:00Z'
+
+  - id: cn-national-day-mid-autumn-2025
+    title: 国庆节、中秋节
+    date: '2025-10-01'
+    all_day: true
+    source: https://www.gov.cn/zhengce/content/202411/content_6987806.htm
+    tags:
+      - holiday
+      - china
+      - national-day
+      - mid-autumn
+    status: confirmed
+    notes: 10月1日至8日放假8天，9月28日（周日）、10月11日（周六）上班
+    updated_at: '2024-11-12T00:00:00Z'

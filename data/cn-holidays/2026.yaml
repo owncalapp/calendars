@@ -1,14 +1,92 @@
 calendar_id: cn-holidays
 events:
-  - id: cn-new-year-2026-01-01
+  - id: cn-new-year-2026
     title: 元旦
-    date: 2026-01-01
+    date: '2026-01-01'
     all_day: true
     source: https://www.gov.cn/
     tags:
       - holiday
       - china
+      - new-year
     status: tentative
-    notes: Official arrangement should be confirmed when the annual notice is
-      published.
-    updated_at: 2026-02-19T00:00:00Z
+    notes: 预计1月1日至3日放假3天（待国务院正式发布）
+    updated_at: '2026-02-20T00:00:00Z'
+
+  - id: cn-spring-festival-2026
+    title: 春节
+    date: '2026-02-17'
+    all_day: true
+    source: https://www.gov.cn/
+    tags:
+      - holiday
+      - china
+      - spring-festival
+    status: tentative
+    notes: 预计2月17日至24日放假8天（农历除夕至初七，待国务院正式发布）
+    updated_at: '2026-02-20T00:00:00Z'
+
+  - id: cn-qingming-2026
+    title: 清明节
+    date: '2026-04-04'
+    all_day: true
+    source: https://www.gov.cn/
+    tags:
+      - holiday
+      - china
+      - qingming
+    status: tentative
+    notes: 预计4月4日至6日放假3天（待国务院正式发布）
+    updated_at: '2026-02-20T00:00:00Z'
+
+  - id: cn-labor-day-2026
+    title: 劳动节
+    date: '2026-05-01'
+    all_day: true
+    source: https://www.gov.cn/
+    tags:
+      - holiday
+      - china
+      - labor-day
+    status: tentative
+    notes: 预计5月1日至5日放假5天（待国务院正式发布）
+    updated_at: '2026-02-20T00:00:00Z'
+
+  - id: cn-dragon-boat-2026
+    title: 端午节
+    date: '2026-06-19'
+    all_day: true
+    source: https://www.gov.cn/
+    tags:
+      - holiday
+      - china
+      - dragon-boat
+    status: tentative
+    notes: 预计6月19日至21日放假3天（待国务院正式发布）
+    updated_at: '2026-02-20T00:00:00Z'
+
+  - id: cn-mid-autumn-2026
+    title: 中秋节
+    date: '2026-09-25'
+    all_day: true
+    source: https://www.gov.cn/
+    tags:
+      - holiday
+      - china
+      - mid-autumn
+    status: tentative
+    notes: 预计9月25日至27日放假3天（待国务院正式发布）
+    updated_at: '2026-02-20T00:00:00Z'
+
+  - id: cn-national-day-2026
+    title: 国庆节
+    date: '2026-10-01'
+    all_day: true
+    source: https://www.gov.cn/
+    tags:
+      - holiday
+      - china
+      - national-day
+    status: tentative
+    notes: 预计10月1日至7日放假7天（待国务院正式发布）
+    updated_at: '2026-02-20T00:00:00Z'
